@@ -1,0 +1,147 @@
+
+ LOG FILE: print_lib.log
+
+ 10:17:48 6 June 2018            
+
+ Log  : FILES file = files
+ Log  : fileroot   = print_lib
+
+
+ ------------------------------------------------------------------
+ Files specified by the FILES file and fileroot for this run.
+ ------------------------------------------------------------------
+ The numbers after the unit names are the internal unit numbers.
+
+ input( 5)       print_lib.i
+ graph(10)       print_lib.gra
+ a2data(11)      /Volumes/Pegasus2/Code/FISPACT-II/FISPACT-II/nuclear_data/decay/a2_2012
+ collapxi(12)    COLLAPX
+ arrayx(13)      ARRAYX
+ hazards(14)     /Volumes/Pegasus2/Code/FISPACT-II/FISPACT-II/nuclear_data/decay/hazards_2012
+ gnuplot(15)     print_lib.plt
+ collapxo(17)    COLLAPX
+ ind_nuc(18)     /Volumes/Pegasus2/Code/FISPACT-II/FISPACT-II/nuclear_data/TENDL2017data/tendl17_decay12_index
+ fluxes(20)      fluxes
+ output(38)      print_lib.out
+ absorp(39)      /Volumes/Pegasus2/Code/FISPACT-II/FISPACT-II/nuclear_data/decay/abs_2012
+ clear(40)       /Volumes/Pegasus2/Code/FISPACT-II/FISPACT-II/nuclear_data/decay/clear_2012
+ tab1(44)        print_lib.tab1
+ tab2(45)        print_lib.tab2
+ tab3(46)        print_lib.tab3
+ tab4(47)        print_lib.tab4
+ runlog(48)      print_lib.log
+ sens(50)        print_lib.sens
+ prob_tab(51)    /Volumes/Pegasus2/Code/FISPACT-II/FISPACT-II/nuclear_data/TENDL2017data/tal2017-n/tp-709-294
+ xs_endf(52)     /Volumes/Pegasus2/Code/FISPACT-II/FISPACT-II/nuclear_data/TENDL2017data/tal2017-n/gxs-709
+ dk_endf(53)     /Volumes/Pegasus2/Code/FISPACT-II/FISPACT-II/nuclear_data/decay/decay_2012
+ fy_endf(54)     /Volumes/Pegasus2/Code/FISPACT-II/FISPACT-II/nuclear_data/GEFY61data/gefy61_nfy
+ sf_endf(55)     /Volumes/Pegasus2/Code/FISPACT-II/FISPACT-II/nuclear_data/GEFY61data/gefy61_sfy
+ xs_endfb(56)    print_lib.bin
+ nucgraph(59)    print_lib.grn
+ nucgnu(60)      print_lib.pln
+ ------------------------------------------------------------------
+
+
+ CLOBBER
+ GETXS 0
+ GETDECAY 0
+ FISPACT
+ * PRINTLIB for tal2014-n/gxs-709 dec2012/gef42
+  load cross-sections
+  load decay data
+  collapse fission yields
+ Log  : nuc_no =         3347
+ Log  : nuclide name = Rn214    
+ 00001: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found, it is either
+        missing from endf data or pruned by xs_threshold
+ Log  : nuc_no =         3348
+ Log  : nuclide name = Rn215    
+ 00002: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found, it is either
+        missing from endf data or pruned by xs_threshold
+ Log  : nuc_no =         3349
+ Log  : nuclide name = Rn216    
+ 00003: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found, it is either
+        missing from endf data or pruned by xs_threshold
+ Log  : nuc_no =         3350
+ Log  : nuclide name = Rn217    
+ 00004: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found, it is either
+        missing from endf data or pruned by xs_threshold
+ Log  : nuc_no =         3351
+ Log  : nuclide name = Rn218    
+ 00005: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found, it is either
+        missing from endf data or pruned by xs_threshold
+ Log  : nuc_no =         3387
+ Log  : nuclide name = Fr217    
+ 00006: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found, it is either
+        missing from endf data or pruned by xs_threshold
+ Log  : nuc_no =         3388
+ Log  : nuclide name = Fr218    
+ 00007: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found, it is either
+        missing from endf data or pruned by xs_threshold
+ Log  : nuc_no =         3390
+ Log  : nuclide name = Fr219    
+ 00008: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found, it is either
+        missing from endf data or pruned by xs_threshold
+ Log  : nuc_no =         3425
+ Log  : nuclide name = Ra219    
+ 00009: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found, it is either
+        missing from endf data or pruned by xs_threshold
+ Log  : nuc_no =         3426
+ Log  : nuclide name = Ra220    
+ 00010: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found, it is either
+        missing from endf data or pruned by xs_threshold
+ Log  : nuc_no =         3498
+ Log  : nuclide name = Th229m   
+ 00011: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found, it is either
+        missing from endf data or pruned by xs_threshold
+  run reset cross-section
+ PRINTLIB 0
+  run printlib
+ END
+ * END OF PRINTLIB
+  run closedown
+  deallocate and closedown
+
+
+ ------------------------------------------------------------------
+ Files that have been opened during this run.
+ ------------------------------------------------------------------
+ The numbers after the unit names are the internal unit numbers.
+
+ input( 5)       print_lib.i
+ collapxi(12)    COLLAPX
+ arrayx(13)      ARRAYX
+ ind_nuc(18)     /Volumes/Pegasus2/Code/FISPACT-II/FISPACT-II/nuclear_data/TENDL2017data/tendl17_decay12_index
+ output(38)      print_lib.out
+ runlog(48)      print_lib.log
+ ------------------------------------------------------------------
+
+
+ Log  :                 fispact run time  =   2.4388     secs
+ Log  :                 rateeq_init_flux  =  0.40000E-05 secs
+ Log  :                rateeq_irrad_step  =   0.0000     secs
+ Log  :                 rateeq_cool_step  =  0.10000E-05 secs
+ Log  :            output_inventory_step  =   0.0000     secs
+ Log  :                    pathways_step  =  0.20000E-05 secs
+ Log  :                 sensitivity_step  =  0.20000E-05 secs
+
+
+  Error Summary 
+ ------------- 
+  total number of errors/warnings   =     11
+  number of serious errors/warnings =      0
+ 10:17:51 6 June 2018            
+
+ END OF LOG FILE
+

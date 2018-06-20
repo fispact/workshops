@@ -1,0 +1,26 @@
+# Run timestamp = 11:08:53 14 June 2018           
+load "ng_style"
+set output "test1.grn.ps"
+#--------------------------------------------------
+#          Activity (Bq/kg)
+set title "IRRADIATION OF TI EEF FW 1.0 MW/M2"
+set xlabel "Decay time (years)"
+set ylabel "Activity (Bq/kg)"
+set logscale xy
+set xrange [ 1.00000E-06: 1.00000E+01]
+set yrange [ 1.00000E+10: 1.00000E+15]
+#
+set tmargin 3
+set rmargin 12
+plot \
+     "test1.grn" index   0 using 2:($4)-($3):($4)+($3)  with filledcurves linecolor rgbcolor "#cbcbcb" notitle, \
+     "test1.grn" index   0 using 2:4 title  "total" with lines linetype 1 linecolor rgbcolor "black", \
+     "test1.grn" index   0 using 2:4:3 with yerrorbars title "uncert" linetype 1 linecolor rgbcolor "black", \
+     "test1.grn" index   0 using 2: 5 title  "^{45}Ti" with lines linetype  1 linecolor rgbcolor colours( 1), \
+     "test1.grn" index   0 using 2: 6 title  "^{49}Sc" with lines linetype  2 linecolor rgbcolor colours( 2), \
+     "test1.grn" index   0 using 2: 7 title  "^{51}Ti" with lines linetype  3 linecolor rgbcolor colours( 3), \
+     "test1.grn" index   0 using 2: 8 title  "^{47}Sc" with lines linetype  4 linecolor rgbcolor colours( 4), \
+     "test1.grn" index   0 using 2: 9 title  "^{45}Ca" with lines linetype  5 linecolor rgbcolor colours( 5), \
+     "test1.grn" index   0 using 2:10 title  "^{46}Sc" with lines linetype  6 linecolor rgbcolor colours( 6), \
+     "test1.grn" index   0 using 2:11 title  "^{48}Sc" with lines linetype  7 linecolor rgbcolor colours( 7)
+unset output

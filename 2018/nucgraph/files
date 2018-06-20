@@ -1,0 +1,44 @@
+# gamma attenuation data
+absorp  /opt/fispact/nuclear_data/decay/abs_2012
+
+# gamma spectrum group energy bins
+ggbins gamma_group_energies
+
+# index of nuclides to be included
+ind_nuc  /opt/fispact/nuclear_data/TENDL2015data/tendl15_decay12_index
+
+# Library cross section data
+enbins /opt/fispact/nuclear_data/ebins/ebins_1102
+xs_endf /opt/fispact/nuclear_data/TENDL2015data/tal2015-n/gxs-709
+
+# Binary cross section data
+xs_endfb /opt/fispact/nuclear_data/bin/tal2015-n.bin
+
+# Library probability tables for self-shielding
+prob_tab  /opt/fispact/nuclear_data/TENDL2015data/tal2015-n/tp-709-294
+
+# fluxes
+fluxes  fluxes
+arb_flux  spectra
+
+# Library decay data
+dk_endf /opt/fispact/nuclear_data/decay/decay_2012
+
+# Library fission data
+fy_endf /opt/fispact/nuclear_data/GEFY61data/gefy61_nfy
+
+# Spontaneous fission data
+sf_endf /opt/fispact/nuclear_data/GEFY61data/gefy61_sfy
+
+# Library regulatory data
+hazards /opt/fispact/nuclear_data/decay/hazards_2012
+clear   /opt/fispact/nuclear_data/decay/clear_2012
+a2data  /opt/fispact/nuclear_data/decay/a2_2012
+
+
+# collapsed cross section data (in and out)
+collapxi  COLLAPX
+collapxo  COLLAPX
+
+# condensed decay and fission data (in and out)
+arrayx  ARRAYX

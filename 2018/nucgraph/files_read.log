@@ -1,0 +1,46 @@
+
+ LOG FILE: files_read.log
+
+ 11:03:31 14 June 2018           
+
+ Log  : FILES file = files
+ Log  : fileroot   = 
+
+
+ ------------------------------------------------------------------
+ Files specified by the FILES file and fileroot for this run.
+ ------------------------------------------------------------------
+ The numbers after the unit names are the internal unit numbers.
+
+ arb_flux( 3)    spectra
+ a2data(11)      /opt/fispact/nuclear_data/decay/a2_2012
+ collapxi(12)    COLLAPX
+ arrayx(13)      ARRAYX
+ hazards(14)     /opt/fispact/nuclear_data/decay/hazards_2012
+ collapxo(17)    COLLAPX
+ ind_nuc(18)     /opt/fispact/nuclear_data/TENDL2015data/tendl15_decay12_index
+ fluxes(20)      fluxes
+ absorp(39)      /opt/fispact/nuclear_data/decay/abs_2012
+ clear(40)       /opt/fispact/nuclear_data/decay/clear_2012
+ prob_tab(51)    /opt/fispact/nuclear_data/TENDL2015data/tal2015-n/tp-709-294
+ xs_endf(52)     /opt/fispact/nuclear_data/TENDL2015data/tal2015-n/gxs-709
+ dk_endf(53)     /opt/fispact/nuclear_data/decay/decay_2012
+ fy_endf(54)     /opt/fispact/nuclear_data/GEFY61data/gefy61_nfy
+ sf_endf(55)     /opt/fispact/nuclear_data/GEFY61data/gefy61_sfy
+ xs_endfb(56)    /opt/fispact/nuclear_data/bin/tal2015-n.bin
+ enbins(57)      /opt/fispact/nuclear_data/ebins/ebins_1102
+ ggbins(58)      gamma_group_energies
+ ------------------------------------------------------------------
+
+
+ Log  : new log file = .log                                                                                                                                
+
+
+  Error Summary 
+ ------------- 
+  total number of errors/warnings   =      0
+  number of serious errors/warnings =      0
+ 11:03:31 14 June 2018           
+
+ END OF LOG FILE
+

@@ -1,0 +1,239 @@
+
+ LOG FILE: test1.log
+
+ 11:08:53 14 June 2018           
+
+ Log  : FILES file = files
+ Log  : fileroot   = test1
+
+
+ ------------------------------------------------------------------
+ Files specified by the FILES file and fileroot for this run.
+ ------------------------------------------------------------------
+ The numbers after the unit names are the internal unit numbers.
+
+ arb_flux( 3)    spectra
+ input( 5)       test1.i
+ graph(10)       test1.gra
+ a2data(11)      /opt/fispact/nuclear_data/decay/a2_2012
+ collapxi(12)    COLLAPX
+ arrayx(13)      ARRAYX
+ hazards(14)     /opt/fispact/nuclear_data/decay/hazards_2012
+ gnuplot(15)     test1.plt
+ collapxo(17)    COLLAPX
+ ind_nuc(18)     /opt/fispact/nuclear_data/TENDL2015data/tendl15_decay12_index
+ fluxes(20)      fluxes
+ output(38)      test1.out
+ absorp(39)      /opt/fispact/nuclear_data/decay/abs_2012
+ clear(40)       /opt/fispact/nuclear_data/decay/clear_2012
+ tab1(44)        test1.tab1
+ tab2(45)        test1.tab2
+ tab3(46)        test1.tab3
+ tab4(47)        test1.tab4
+ runlog(48)      test1.log
+ sens(50)        test1.sens
+ prob_tab(51)    /opt/fispact/nuclear_data/TENDL2015data/tal2015-n/tp-709-294
+ xs_endf(52)     /opt/fispact/nuclear_data/TENDL2015data/tal2015-n/gxs-709
+ dk_endf(53)     /opt/fispact/nuclear_data/decay/decay_2012
+ fy_endf(54)     /opt/fispact/nuclear_data/GEFY61data/gefy61_nfy
+ sf_endf(55)     /opt/fispact/nuclear_data/GEFY61data/gefy61_sfy
+ xs_endfb(56)    /opt/fispact/nuclear_data/bin/tal2015-n.bin
+ enbins(57)      /opt/fispact/nuclear_data/ebins/ebins_1102
+ ggbins(58)      gamma_group_energies
+ nucgraph(59)    test1.grn
+ nucgnu(60)      test1.pln
+ ------------------------------------------------------------------
+
+
+ CLOBBER
+ MONITOR 1
+ GETXS 0
+ GETDECAY 0
+ FISPACT
+ * IRRADIATION OF TI EEF FW 1.0 MW/M2
+  load cross-sections
+  load decay data
+  collapse fission yields
+ Log  : nuc_no =         3347
+ Log  : nuclide name = Rn214    
+ 00001: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found, it is either
+        missing from endf data or pruned by xs_threshold
+ Log  : nuc_no =         3348
+ Log  : nuclide name = Rn215    
+ 00002: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found, it is either
+        missing from endf data or pruned by xs_threshold
+ Log  : nuc_no =         3349
+ Log  : nuclide name = Rn216    
+ 00003: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found, it is either
+        missing from endf data or pruned by xs_threshold
+ Log  : nuc_no =         3350
+ Log  : nuclide name = Rn217    
+ 00004: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found, it is either
+        missing from endf data or pruned by xs_threshold
+ Log  : nuc_no =         3351
+ Log  : nuclide name = Rn218    
+ 00005: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found, it is either
+        missing from endf data or pruned by xs_threshold
+ Log  : nuc_no =         3387
+ Log  : nuclide name = Fr217    
+ 00006: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found, it is either
+        missing from endf data or pruned by xs_threshold
+ Log  : nuc_no =         3388
+ Log  : nuclide name = Fr218    
+ 00007: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found, it is either
+        missing from endf data or pruned by xs_threshold
+ Log  : nuc_no =         3390
+ Log  : nuclide name = Fr219    
+ 00008: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found, it is either
+        missing from endf data or pruned by xs_threshold
+ Log  : nuc_no =         3425
+ Log  : nuclide name = Ra219    
+ 00009: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found, it is either
+        missing from endf data or pruned by xs_threshold
+ Log  : nuc_no =         3426
+ Log  : nuclide name = Ra220    
+ 00010: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found, it is either
+        missing from endf data or pruned by xs_threshold
+ Log  : nuc_no =         3498
+ Log  : nuclide name = Th229m   
+ 00011: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found, it is either
+        missing from endf data or pruned by xs_threshold
+  run reset cross-section
+ MASS 1.0 1
+ Ti 100.0
+ MIND 1.E5
+ NUCGRAPH 1 1.0 1
+ 1
+ WALL 1.00
+ UNCERTAINTY 1
+ ATOMS
+  load initial values
+  run output inventory
+ HAZARDS
+  load hazards data
+ HALF
+ ATWO
+  load a2 data
+ DOSE 1
+ TIME 2.5
+  fill rate equation matrix for cooling
+  fill rate equation matrix for irradiation
+  start pathstep recording
+  initialise dominant analysis
+  test for gas, kerma and dpa data
+ YEARS
+ ATOMS
+  run add rateeq for pathways
+  run irradiation init
+  run irradiation step
+  run add pathstep
+  run output inventory
+ FLUX 0.
+ ZERO
+ TIME 1
+ MINS
+ ATOMS
+ TIME 1
+ HOURS
+ ATOMS
+ TIME 1
+ DAYS
+ ATOMS
+ TIME 7
+ DAYS
+ ATOMS
+ TIME 1
+ YEARS
+ ATOMS
+ TIME 1
+ MINS
+ ATOMS
+  run pathways initialisation
+  run pathways uncertainty
+  run nucgraph initialisation
+  run cooling step
+  run add pathstep
+  run output inventory
+  run pathways uncertainty
+ TIME 1
+ HOURS
+ ATOMS
+  run cooling step
+  run add pathstep
+  run output inventory
+  run pathways uncertainty
+ TIME 1
+ DAYS
+ ATOMS
+  run cooling step
+  run add pathstep
+  run output inventory
+  run pathways uncertainty
+ TIME 7
+ DAYS
+ ATOMS
+  run cooling step
+  run add pathstep
+  run output inventory
+  run pathways uncertainty
+ TIME 1
+ YEARS
+ ATOMS
+  run cooling step
+  run add pathstep
+  run output inventory
+  run pathways uncertainty
+ END
+ * END
+  run output summary
+  run closedown
+  deallocate and closedown
+
+
+ ------------------------------------------------------------------
+ Files that have been opened during this run.
+ ------------------------------------------------------------------
+ The numbers after the unit names are the internal unit numbers.
+
+ input( 5)       test1.i
+ a2data(11)      /opt/fispact/nuclear_data/decay/a2_2012
+ collapxi(12)    COLLAPX
+ arrayx(13)      ARRAYX
+ hazards(14)     /opt/fispact/nuclear_data/decay/hazards_2012
+ ind_nuc(18)     /opt/fispact/nuclear_data/TENDL2015data/tendl15_decay12_index
+ output(38)      test1.out
+ absorp(39)      /opt/fispact/nuclear_data/decay/abs_2012
+ runlog(48)      test1.log
+ nucgraph(59)    test1.grn
+ nucgnu(60)      test1.pln
+ ------------------------------------------------------------------
+
+
+ Log  :                 fispact run time  =   2.0228     secs
+ Log  :                 rateeq_init_flux  =  0.31700E-03 secs
+ Log  :                rateeq_irrad_step  =  0.73178     secs
+ Log  :                 rateeq_cool_step  =  0.16954     secs
+ Log  :            output_inventory_step  =  0.38202E-01 secs
+ Log  :                    pathways_step  =  0.92679E-01 secs
+ Log  :                 sensitivity_step  =  0.30000E-05 secs
+
+
+  Error Summary 
+ ------------- 
+  total number of errors/warnings   =     11
+  number of serious errors/warnings =      0
+ 11:08:55 14 June 2018           
+
+ END OF LOG FILE
+

@@ -1,0 +1,249 @@
+
+ LOG FILE: multiflux_stepwise.log
+
+ 11:16:24 14 June 2018           
+
+ Log  : FILES file = files
+ Log  : fileroot   = multiflux_stepwise
+
+
+ ------------------------------------------------------------------
+ Files specified by the FILES file and fileroot for this run.
+ ------------------------------------------------------------------
+ The numbers after the unit names are the internal unit numbers.
+
+ input( 5)       multiflux_stepwise.i
+ graph(10)       multiflux_stepwise.gra
+ a2data(11)      /opt/fispact/nuclear_data/decay/a2_2012
+ collapxi(12)    COLLAPX.1
+                 COLLAPX.2
+ arrayx(13)      ARRAYX
+ hazards(14)     /opt/fispact/nuclear_data/decay/hazards_2012
+ gnuplot(15)     multiflux_stepwise.plt
+ collapxo(17)    COLLAPX.1
+                 COLLAPX.2
+ ind_nuc(18)     /opt/fispact/nuclear_data/TENDL2015data/tendl15_decay12_index
+ fluxes(20)      fluxes.1
+                 fluxes.2
+ output(38)      multiflux_stepwise.out
+ absorp(39)      /opt/fispact/nuclear_data/decay/abs_2012
+ clear(40)       /opt/fispact/nuclear_data/decay/clear_2012
+ tab1(44)        multiflux_stepwise.tab1
+ tab2(45)        multiflux_stepwise.tab2
+ tab3(46)        multiflux_stepwise.tab3
+ tab4(47)        multiflux_stepwise.tab4
+ runlog(48)      multiflux_stepwise.log
+ sens(50)        multiflux_stepwise.sens
+ prob_tab(51)    /opt/fispact/nuclear_data/TENDL2015data/tal2015-n/tp-709-294
+                 /opt/fispact/nuclear_data/TENDL2015data/tal2015-n/tp-709-294
+ xs_endf(52)     /opt/fispact/nuclear_data/TENDL2015data/tal2015-n/gxs-709
+ dk_endf(53)     /opt/fispact/nuclear_data/decay/decay_2012
+ fy_endf(54)     /opt/fispact/nuclear_data/GEFY61data/gefy61_nfy
+ sf_endf(55)     /opt/fispact/nuclear_data/GEFY61data/gefy61_sfy
+ xs_endfb(56)    /opt/fispact/nuclear_data/bin/tal2015-n.bin
+ nucgraph(59)    multiflux_stepwise.grn
+ nucgnu(60)      multiflux_stepwise.pln
+ ------------------------------------------------------------------
+
+
+ CLOBBER
+ XSTHRESHOLD 1.0e-15
+ MONITOR 1
+ GETXS 0
+ GETDECAY 0
+ FISPACT
+ * IRRADIATION OF Ar
+  load cross-sections
+  load decay data
+  collapse fission yields
+ Log  : nuc_no =         3347
+ Log  : nuclide name = Rn214    
+ 00001: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found, it is either
+        missing from endf data or pruned by xs_threshold
+ Log  : nuc_no =         3348
+ Log  : nuclide name = Rn215    
+ 00002: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found, it is either
+        missing from endf data or pruned by xs_threshold
+ Log  : nuc_no =         3349
+ Log  : nuclide name = Rn216    
+ 00003: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found, it is either
+        missing from endf data or pruned by xs_threshold
+ Log  : nuc_no =         3350
+ Log  : nuclide name = Rn217    
+ 00004: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found, it is either
+        missing from endf data or pruned by xs_threshold
+ Log  : nuc_no =         3351
+ Log  : nuclide name = Rn218    
+ 00005: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found, it is either
+        missing from endf data or pruned by xs_threshold
+ Log  : nuc_no =         3387
+ Log  : nuclide name = Fr217    
+ 00006: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found, it is either
+        missing from endf data or pruned by xs_threshold
+ Log  : nuc_no =         3388
+ Log  : nuclide name = Fr218    
+ 00007: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found, it is either
+        missing from endf data or pruned by xs_threshold
+ Log  : nuc_no =         3390
+ Log  : nuclide name = Fr219    
+ 00008: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found, it is either
+        missing from endf data or pruned by xs_threshold
+ Log  : nuc_no =         3425
+ Log  : nuclide name = Ra219    
+ 00009: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found, it is either
+        missing from endf data or pruned by xs_threshold
+ Log  : nuc_no =         3426
+ Log  : nuclide name = Ra220    
+ 00010: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found, it is either
+        missing from endf data or pruned by xs_threshold
+ Log  : nuc_no =         3498
+ Log  : nuclide name = Th229m   
+ 00011: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found, it is either
+        missing from endf data or pruned by xs_threshold
+  run reset cross-section
+ FUEL 1
+ Ar40 1e25
+ DENSITY 0.1
+ ATOMS
+  load initial values
+  run output inventory
+ FLUX 2.12437E14
+ TIME 2
+  fill rate equation matrix for cooling
+  fill rate equation matrix for irradiation
+  initialise dominant analysis
+  test for gas, kerma and dpa data
+ SECS
+ ATOMS
+  run irradiation init
+  run irradiation step
+  run output inventory
+ GETXS 0
+  load cross-sections
+  collapse fission yields
+ Log  : nuc_no =         3347
+ Log  : nuclide name = Rn214    
+ 00012: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found, it is either
+        missing from endf data or pruned by xs_threshold
+ Log  : nuc_no =         3348
+ Log  : nuclide name = Rn215    
+ 00013: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found, it is either
+        missing from endf data or pruned by xs_threshold
+ Log  : nuc_no =         3349
+ Log  : nuclide name = Rn216    
+ 00014: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found, it is either
+        missing from endf data or pruned by xs_threshold
+ Log  : nuc_no =         3350
+ Log  : nuclide name = Rn217    
+ 00015: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found, it is either
+        missing from endf data or pruned by xs_threshold
+ Log  : nuc_no =         3351
+ Log  : nuclide name = Rn218    
+ 00016: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found, it is either
+        missing from endf data or pruned by xs_threshold
+ Log  : nuc_no =         3387
+ Log  : nuclide name = Fr217    
+ 00017: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found, it is either
+        missing from endf data or pruned by xs_threshold
+ Log  : nuc_no =         3388
+ Log  : nuclide name = Fr218    
+ 00018: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found, it is either
+        missing from endf data or pruned by xs_threshold
+ Log  : nuc_no =         3390
+ Log  : nuclide name = Fr219    
+ 00019: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found, it is either
+        missing from endf data or pruned by xs_threshold
+ Log  : nuc_no =         3425
+ Log  : nuclide name = Ra219    
+ 00020: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found, it is either
+        missing from endf data or pruned by xs_threshold
+ Log  : nuc_no =         3426
+ Log  : nuclide name = Ra220    
+ 00021: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found, it is either
+        missing from endf data or pruned by xs_threshold
+ Log  : nuc_no =         3498
+ Log  : nuclide name = Th229m   
+ 00022: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found, it is either
+        missing from endf data or pruned by xs_threshold
+  run reset cross-section
+  run update rate equation matrix
+  run irradiation init
+ FLUX 5.9558E+14
+ TIME 10
+ SECS
+ ATOMS
+  run irradiation init
+  run irradiation step
+  run output inventory
+ FLUX 0.0
+ ZERO
+ TIME 1
+ YEARS
+ ATOMS
+ TIME 1
+ YEARS
+ ATOMS
+  run cooling step
+  run output inventory
+ END
+ * END
+  run output summary
+  run closedown
+  deallocate and closedown
+
+
+ ------------------------------------------------------------------
+ Files that have been opened during this run.
+ ------------------------------------------------------------------
+ The numbers after the unit names are the internal unit numbers.
+
+ input( 5)       multiflux_stepwise.i
+ collapxi(12)    COLLAPX.1
+                 COLLAPX.2
+ arrayx(13)      ARRAYX
+ ind_nuc(18)     /opt/fispact/nuclear_data/TENDL2015data/tendl15_decay12_index
+ output(38)      multiflux_stepwise.out
+ absorp(39)      /opt/fispact/nuclear_data/decay/abs_2012
+ runlog(48)      multiflux_stepwise.log
+ ------------------------------------------------------------------
+
+
+ Log  :                 fispact run time  =   1.4174     secs
+ Log  :                 rateeq_init_flux  =  0.37300E-03 secs
+ Log  :                rateeq_irrad_step  =  0.21098     secs
+ Log  :                 rateeq_cool_step  =  0.28350E-01 secs
+ Log  :            output_inventory_step  =  0.16296E-01 secs
+ Log  :                    pathways_step  =  0.30000E-05 secs
+ Log  :                 sensitivity_step  =  0.20000E-05 secs
+
+
+  Error Summary 
+ ------------- 
+  total number of errors/warnings   =     22
+  number of serious errors/warnings =      0
+ 11:16:26 14 June 2018           
+
+ END OF LOG FILE
+

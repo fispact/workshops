@@ -1,0 +1,536 @@
+
+ LOG FILE: pulses.log
+
+ 10:39:50 14 June 2018           
+
+ Log  : FILES file = files
+ Log  : fileroot   = pulses
+
+
+ ------------------------------------------------------------------
+ Files specified by the FILES file and fileroot for this run.
+ ------------------------------------------------------------------
+ The numbers after the unit names are the internal unit numbers.
+
+ input( 5)       pulses.i
+ graph(10)       pulses.gra
+ a2data(11)      C:/Users/drand/OneDrive/Documents/Fispact/decay/decay/a2_2012
+ collapxi(12)    COLLAPX
+ arrayx(13)      ARRAYX
+ hazards(14)     C:/Users/drand/OneDrive/Documents/Fispact/decay/decay/hazards_2012
+ gnuplot(15)     pulses.plt
+ collapxo(17)    COLLAPX
+ ind_nuc(18)     C:/Users/drand/OneDrive/Documents/Fispact/decay/TENDL2015data/tendl15_decay12_index
+ fluxes(20)      fluxes
+ output(38)      pulses.out
+ absorp(39)      C:/Users/drand/OneDrive/Documents/Fispact/decay/decay/abs_2012
+ clear(40)       C:/Users/drand/OneDrive/Documents/Fispact/decay/decay/clear_2012
+ tab1(44)        pulses.tab1
+ tab2(45)        pulses.tab2
+ tab3(46)        pulses.tab3
+ tab4(47)        pulses.tab4
+ runlog(48)      pulses.log
+ sens(50)        pulses.sens
+ prob_tab(51)    C:/Users/drand/OneDrive/Documents/Fispact/decay/TENDL2015data/tal2015-n/tp-709-294
+ xs_endf(52)     C:/Users/drand/OneDrive/Documents/Fispact/decay/TENDL2015data/tal2015-n/gxs-709
+ dk_endf(53)     C:/Users/drand/OneDrive/Documents/Fispact/decay/decay/decay_2012
+ fy_endf(54)     C:/Users/drand/OneDrive/Documents/Fispact/decay/GEFY61data/gefy61_nfy
+ sf_endf(55)     C:/Users/drand/OneDrive/Documents/Fispact/decay/GEFY61data/gefy61_sfy
+ xs_endfb(56)    pulses.bin
+ nucgraph(59)    pulses.grn
+ nucgnu(60)      pulses.pln
+ ------------------------------------------------------------------
+
+
+ GETXS 1 709
+ GETDECAY 1
+ FISPACT
+ * Pulses example
+  load cross-sections
+ Log  : parent zai from xs_endf data file =        60000
+ Log  : parent zai from nuclide index     =        60120
+ 00001: Warning: endfmat_m:read_file_1: 2: 
+        zai mismatch for nuclide C12 in nuclide index
+        parent zai from nuclide index used
+ Log  : current za       =         6000
+ Log  : nuclide index za =         6012
+ Log  : mat =          600
+ Log  : mf  =            2
+ Log  : mt  =          151
+ Log  : ns  =            1
+ 00002: Warning: endfmat_m:check_za_awr: 1: 
+        za value in current record does not match nuclide index value
+        parent za from nuclide index used
+  load decay data
+ Log  : nuclide zai =       922420
+ Log  : rtyp =        0.0000000    
+ 00003: Warning: decay_m:read_spectra: 2: 
+        Invalid rtyp in spectrum subsection of decay file
+        irt set to zero
+ 00004: Warning: nuclide_m:read_fissyld_endf: 1: 
+        No fission yield data found
+        Check that fy_endf is correctly mapped in the files file.
+ 00005: Warning: nuclide_m:set_asscfy_endf: 2: 
+        no fissionable nuclides found in nuclide index file
+  collapse fission yields
+  run reset cross-section
+ DENSITY 7.8
+ MASS 1.0 9
+ FE 65.050
+ C 0.030
+ MN 2.000
+ P 0.045
+ S 0.030
+ SI 0.750
+ CR 20.00
+ NI 12.00
+ N 0.10
+ MIND 1.
+ HALF
+ HAZARDS
+  load hazards data
+ FLUX 1.0E12
+ TIME 1.0
+  load initial values
+  fill rate equation matrix for cooling
+  fill rate equation matrix for irradiation
+  initialise dominant analysis
+  test for gas, kerma and dpa data
+ HOURS
+ ATOMS
+  run irradiation init
+  run irradiation step
+  run output inventory
+ FLUX 0.0
+ TIME 11.0
+ HOURS
+ ATOMS
+  run cooling step
+  run output inventory
+ FLUX 1.0E12
+ TIME 1.0
+ HOURS
+ ATOMS
+  run irradiation init
+  run irradiation step
+  run output inventory
+ FLUX 0.0
+ TIME 11.0
+ HOURS
+ ATOMS
+  run cooling step
+  run output inventory
+ FLUX 1.0E12
+ TIME 1.0
+ HOURS
+ ATOMS
+  run irradiation init
+  run irradiation step
+  run output inventory
+ FLUX 0.0
+ TIME 11.0
+ HOURS
+ ATOMS
+  run cooling step
+  run output inventory
+ FLUX 1.0E12
+ TIME 1.0
+ HOURS
+ ATOMS
+  run irradiation init
+  run irradiation step
+  run output inventory
+ FLUX 0.0
+ TIME 11.0
+ HOURS
+ ATOMS
+  run cooling step
+  run output inventory
+ FLUX 1.0E12
+ TIME 1.0
+ HOURS
+ ATOMS
+  run irradiation init
+  run irradiation step
+  run output inventory
+ FLUX 0.0
+ TIME 11.0
+ HOURS
+ ATOMS
+  run cooling step
+  run output inventory
+ FLUX 1.0E12
+ TIME 1.0
+ HOURS
+ ATOMS
+  run irradiation init
+  run irradiation step
+  run output inventory
+ FLUX 0.0
+ TIME 11.0
+ HOURS
+ ATOMS
+  run cooling step
+  run output inventory
+ FLUX 1.0E12
+ TIME 1.0
+ HOURS
+ ATOMS
+  run irradiation init
+  run irradiation step
+  run output inventory
+ FLUX 0.0
+ TIME 11.0
+ HOURS
+ ATOMS
+  run cooling step
+  run output inventory
+ FLUX 1.0E12
+ TIME 1.0
+ HOURS
+ ATOMS
+  run irradiation init
+  run irradiation step
+  run output inventory
+ FLUX 0.0
+ TIME 11.0
+ HOURS
+ ATOMS
+  run cooling step
+  run output inventory
+ FLUX 1.0E12
+ TIME 1.0
+ HOURS
+ ATOMS
+  run irradiation init
+  run irradiation step
+  run output inventory
+ FLUX 0.0
+ TIME 11.0
+ HOURS
+ ATOMS
+  run cooling step
+  run output inventory
+ FLUX 1.0E12
+ TIME 1.0
+ HOURS
+ ATOMS
+  run irradiation init
+  run irradiation step
+  run output inventory
+ FLUX 0.0
+ TIME 11.0
+ HOURS
+ ATOMS
+  run cooling step
+  run output inventory
+ FLUX 1.0E12
+ TIME 1.0
+ HOURS
+ ATOMS
+  run irradiation init
+  run irradiation step
+  run output inventory
+ FLUX 0.0
+ TIME 11.0
+ HOURS
+ ATOMS
+  run cooling step
+  run output inventory
+ FLUX 1.0E12
+ TIME 1.0
+ HOURS
+ ATOMS
+  run irradiation init
+  run irradiation step
+  run output inventory
+ FLUX 0.0
+ TIME 11.0
+ HOURS
+ ATOMS
+  run cooling step
+  run output inventory
+ FLUX 1.0E12
+ TIME 1.0
+ HOURS
+ ATOMS
+  run irradiation init
+  run irradiation step
+  run output inventory
+ FLUX 0.0
+ TIME 11.0
+ HOURS
+ ATOMS
+  run cooling step
+  run output inventory
+ FLUX 1.0E12
+ TIME 1.0
+ HOURS
+ ATOMS
+  run irradiation init
+  run irradiation step
+  run output inventory
+ FLUX 0.0
+ TIME 11.0
+ HOURS
+ ATOMS
+  run cooling step
+  run output inventory
+ FLUX 1.0E12
+ TIME 1.0
+ HOURS
+ ATOMS
+  run irradiation init
+  run irradiation step
+  run output inventory
+ FLUX 0.0
+ TIME 11.0
+ HOURS
+ ATOMS
+  run cooling step
+  run output inventory
+ FLUX 1.0E12
+ TIME 1.0
+ HOURS
+ ATOMS
+  run irradiation init
+  run irradiation step
+  run output inventory
+ FLUX 0.0
+ TIME 11.0
+ HOURS
+ ATOMS
+  run cooling step
+  run output inventory
+ FLUX 1.0E12
+ TIME 1.0
+ HOURS
+ ATOMS
+  run irradiation init
+  run irradiation step
+  run output inventory
+ FLUX 0.0
+ TIME 11.0
+ HOURS
+ ATOMS
+  run cooling step
+  run output inventory
+ FLUX 1.0E12
+ TIME 1.0
+ HOURS
+ ATOMS
+  run irradiation init
+  run irradiation step
+  run output inventory
+ FLUX 0.0
+ TIME 11.0
+ HOURS
+ ATOMS
+  run cooling step
+  run output inventory
+ FLUX 1.0E12
+ TIME 1.0
+ HOURS
+ ATOMS
+  run irradiation init
+  run irradiation step
+  run output inventory
+ FLUX 0.0
+ TIME 11.0
+ HOURS
+ ATOMS
+  run cooling step
+  run output inventory
+ FLUX 1.0E12
+ TIME 1.0
+ HOURS
+ ATOMS
+  run irradiation init
+  run irradiation step
+  run output inventory
+ FLUX 0.0
+ TIME 11.0
+ HOURS
+ ATOMS
+  run cooling step
+  run output inventory
+ FLUX 0.0
+ ZERO
+ TIME 0
+ ATOMS
+ TIME 5
+ MINS
+ ATOMS
+ TIME 55
+ MINS
+ ATOMS
+ TIME 23
+ HOURS
+ ATOMS
+ TIME 29
+ DAYS
+ ATOMS
+ TIME 30
+ DAYS
+ ATOMS
+ TIME 30
+ DAYS
+ ATOMS
+ TIME 90
+ DAYS
+ ATOMS
+ TIME 185.25
+ DAYS
+ ATOMS
+ TIME 1
+ YEARS
+ ATOMS
+ TIME 1
+ YEARS
+ ATOMS
+ TIME 2
+ YEARS
+ ATOMS
+ TIME 5
+ YEARS
+ ATOMS
+ TIME 10
+ YEARS
+ ATOMS
+ TIME 10
+ YEARS
+ ATOMS
+ TIME 20
+ YEARS
+ ATOMS
+ TIME 50
+ YEARS
+ ATOMS
+ TIME 0
+ ATOMS
+  run cooling step
+  run output inventory
+ TIME 5
+ MINS
+ ATOMS
+  run cooling step
+  run output inventory
+ TIME 55
+ MINS
+ ATOMS
+  run cooling step
+  run output inventory
+ TIME 23
+ HOURS
+ ATOMS
+  run cooling step
+  run output inventory
+ TIME 29
+ DAYS
+ ATOMS
+  run cooling step
+  run output inventory
+ TIME 30
+ DAYS
+ ATOMS
+  run cooling step
+  run output inventory
+ TIME 30
+ DAYS
+ ATOMS
+  run cooling step
+  run output inventory
+ TIME 90
+ DAYS
+ ATOMS
+  run cooling step
+  run output inventory
+ TIME 185.25
+ DAYS
+ ATOMS
+  run cooling step
+  run output inventory
+ TIME 1
+ YEARS
+ ATOMS
+  run cooling step
+  run output inventory
+ TIME 1
+ YEARS
+ ATOMS
+  run cooling step
+  run output inventory
+ TIME 2
+ YEARS
+ ATOMS
+  run cooling step
+  run output inventory
+ TIME 5
+ YEARS
+ ATOMS
+  run cooling step
+  run output inventory
+ TIME 10
+ YEARS
+ ATOMS
+  run cooling step
+  run output inventory
+ TIME 10
+ YEARS
+ ATOMS
+  run cooling step
+  run output inventory
+ TIME 20
+ YEARS
+ ATOMS
+  run cooling step
+  run output inventory
+ TIME 50
+ YEARS
+ ATOMS
+  run cooling step
+  run output inventory
+ END
+ * end of irradiation
+  run output summary
+  run closedown
+  deallocate and closedown
+
+
+ ------------------------------------------------------------------
+ Files that have been opened during this run.
+ ------------------------------------------------------------------
+ The numbers after the unit names are the internal unit numbers.
+
+ input( 5)       pulses.i
+ arrayx(13)      ARRAYX
+ hazards(14)     C:/Users/drand/OneDrive/Documents/Fispact/decay/decay/hazards_2012
+ collapxo(17)    COLLAPX
+ ind_nuc(18)     C:/Users/drand/OneDrive/Documents/Fispact/decay/TENDL2015data/tendl15_decay12_index
+ fluxes(20)      fluxes
+ output(38)      pulses.out
+ absorp(39)      C:/Users/drand/OneDrive/Documents/Fispact/decay/decay/abs_2012
+ runlog(48)      pulses.log
+ xs_endf(52)     C:/Users/drand/OneDrive/Documents/Fispact/decay/TENDL2015data/tal2015-n/gxs-709
+ dk_endf(53)     C:/Users/drand/OneDrive/Documents/Fispact/decay/decay/decay_2012
+ fy_endf(54)     C:/Users/drand/OneDrive/Documents/Fispact/decay/GEFY61data/gefy61_nfy
+ ------------------------------------------------------------------
+
+
+ Log  :                 fispact run time  =   71.062     secs
+ Log  :                 rateeq_init_flux  =   0.0000     secs
+ Log  :                rateeq_irrad_step  =   7.2812     secs
+ Log  :                 rateeq_cool_step  =   1.1719     secs
+ Log  :            output_inventory_step  =  0.43750     secs
+ Log  :                    pathways_step  =   0.0000     secs
+ Log  :                 sensitivity_step  =   0.0000     secs
+
+
+  Error Summary 
+ ------------- 
+  total number of errors/warnings   =      5
+  number of serious errors/warnings =      0
+ 10:41:22 14 June 2018           
+
+ END OF LOG FILE
+
