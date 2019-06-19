@@ -1,0 +1,17 @@
+ind_nuc              /opt/fispact/nuclear_data/decay/decay_2012_index_2012
+xs_endf              /opt/fispact/nuclear_data/TENDL2017data/tal2017-n/gxs-709          
+prob_tab             /opt/fispact/nuclear_data/TENDL2017data/tal2017-n/tp-709-294        
+
+fy_endf              /opt/fispact/nuclear_data/UKFY42data/ukfy4_2n
+sf_endf              /opt/fispact/nuclear_data/GEFY61data/gefy61_sfy                     
+
+dk_endf              /opt/fispact/nuclear_data/decay/decay_2012                          
+hazards              /opt/fispact/nuclear_data/decay/hazards_2012                        
+clear                /opt/fispact/nuclear_data/decay/clear_2012                          
+a2data               /opt/fispact/nuclear_data/decay/a2_2012                             
+absorp               /opt/fispact/nuclear_data/decay/abs_2012                            
+
+fluxes               fluxes                                                                                              
+
+collapxo             COLLAPX                                                                                             
+arrayx               ARRAYX                                                                                              
