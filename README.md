@@ -4,8 +4,7 @@
 
 ##### Presentations and exercises
 
+- 2019
 - 2018
-- 2017
-- 2016
 
 
