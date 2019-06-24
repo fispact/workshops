@@ -1,0 +1,3 @@
+ind_nuc /opt/fispact/nuclear_data/decay/decay_2012_index_2012
+arb_flux fluxes.616.arb
+fluxes fluxes.162.convert

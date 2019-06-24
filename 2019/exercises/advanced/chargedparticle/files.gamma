@@ -1,0 +1,29 @@
+# index file - decay_2012 covers 3875 nuclides and is the standard index file
+# Matches with TENDL (14, 15, 17), JEFF, CENDL and JENDL
+# For ENDFB/VII use its index file
+ind_nuc /opt/fispact/nuclear_data/decay/decay_2012_index_2012
+
+# decay data base directory
+dk_endf /opt/fispact/nuclear_data/decay/decay_2012
+
+# cross section data
+xs_endf /opt/fispact/nuclear_data/TENDL2017data/tal2017-g/gxs-162
+
+# fission yield data
+fy_endf /opt/fispact/nuclear_data/UKFY41data/ukfy4_1g
+
+# absorp data
+absorp /opt/fispact/nuclear_data/decay/abs_2012
+
+# regulatory data
+hazards /opt/fispact/nuclear_data/decay/hazards_2012
+clear /opt/fispact/nuclear_data/decay/clear_2012
+a2data /opt/fispact/nuclear_data/decay/a2_2012
+
+# collapsed cross section data (out)
+collapxo COLLAPX
+
+# condensed decay and fission data (in and out)
+arrayx ARRAYX
+
+fluxes fluxes.162

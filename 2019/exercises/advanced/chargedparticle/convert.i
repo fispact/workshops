@@ -1,0 +1,6 @@
+CLOBBER
+GRPCONVERT 616 162
+FISPACT
+* group convert
+END 
+* end
