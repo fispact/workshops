@@ -83,58 +83,58 @@ set label 150 at graph -0.20,graph 0.5 center rotate by 90 "Heat Output [{/Symbo
 pl \
 "Ni-tendl17.grn" \
  u (($2)):($4*1e6) \
-every ::2+1 not w l lt 1 lw 6 lc rgbcolor "black",\
+ not w l lt 1 lw 6 lc rgbcolor "black",\
 "Ni-tendl17.grn" \
  u (($2)):($4*1e6) \
-every 10::9+2 t "total" w p lt 1 lw 6 lc rgbcolor "black",\
+ t "total" w p lt 1 lw 6 lc rgbcolor "black",\
 "Ni-tendl17.grn" \
  u (($2)):($10>1e-13/10?$10*1e6:1/0) \
-every ::2+1 not w l lt 2 lw 5 lc rgbcolor colours(1),\
+ not w l lt 2 lw 5 lc rgbcolor colours(1),\
 "Ni-tendl17.grn" \
  u (($2)):($10>1e-13/10?$10*1e6:1/0) \
-every 10::9+2 t "Co58" w p lt 2  lw 5 lc rgbcolor colours(1),\
+t "Co58" w p lt 2  lw 5 lc rgbcolor colours(1),\
 "Ni-tendl17.grn" \
  u (($2)):($11>1e-13/10?$11*1e6:1/0) \
-every ::2+1 not w l lt 3 lw 5 lc rgbcolor colours(2),\
+ not w l lt 3 lw 5 lc rgbcolor colours(2),\
 "Ni-tendl17.grn" \
  u (($2)):($11>1e-13/10?$11*1e6:1/0) \
-every 10::9+2 t "Co58m" w p lt 3  lw 5 lc rgbcolor colours(2),\
+ t "Co58m" w p lt 3  lw 5 lc rgbcolor colours(2),\
 "Ni-tendl17.grn" \
  u (($2)):($12>1e-13/10?$12*1e6:1/0) \
-every ::2+1 not w l lt 4 lw 5 lc rgbcolor colours(3),\
+ not w l lt 4 lw 5 lc rgbcolor colours(3),\
 "Ni-tendl17.grn" \
  u (($2)):($12>1e-13/10?$12*1e6:1/0) \
-every 10::9+2 t "Co61" w p lt 4  lw 5 lc rgbcolor colours(3),\
+ t "Co61" w p lt 4  lw 5 lc rgbcolor colours(3),\
 "Ni-tendl17.grn" \
  u (($2)):($13>1e-13/10?$13*1e6:1/0) \
-every ::2+1 not w l lt 5 lw 5 lc rgbcolor colours(4),\
+ not w l lt 5 lw 5 lc rgbcolor colours(4),\
 "Ni-tendl17.grn" \
  u (($2)):($13>1e-13/10?$13*1e6:1/0) \
-every 10::9+2 t "Fe61" w p lt 5  lw 5 lc rgbcolor colours(4),\
+ t "Fe61" w p lt 5  lw 5 lc rgbcolor colours(4),\
 "Ni-tendl17.grn" \
  u (($2)):($14>1e-13/10?$14*1e6:1/0) \
-every ::2+1 not w l lt 6 lw 5 lc rgbcolor colours(5),\
+ not w l lt 6 lw 5 lc rgbcolor colours(5),\
 "Ni-tendl17.grn" \
  u (($2)):($14>1e-13/10?$14*1e6:1/0) \
-every 10::9+2 t "Ni57" w p lt 6  lw 5 lc rgbcolor colours(5),\
+ t "Ni57" w p lt 6  lw 5 lc rgbcolor colours(5),\
 "Ni-tendl17.grn" \
  u (($2)):($15>1e-13/10?$15*1e6:1/0) \
-every ::2+1 not w l lt 7 lw 5 lc rgbcolor colours(6),\
+ not w l lt 7 lw 5 lc rgbcolor colours(6),\
 "Ni-tendl17.grn" \
  u (($2)):($15>1e-13/10?$15*1e6:1/0) \
-every 10::9+2 t "Co60m" w p lt 7  lw 5 lc rgbcolor colours(6),\
+ t "Co60m" w p lt 7  lw 5 lc rgbcolor colours(6),\
 "Ni-tendl17.grn" \
  u (($2)):($16>1e-13/10?$16*1e6:1/0) \
-every ::2+1 not w l lt 8 lw 5 lc rgbcolor colours(7),\
+ not w l lt 8 lw 5 lc rgbcolor colours(7),\
 "Ni-tendl17.grn" \
  u (($2)):($16>1e-13/10?$16*1e6:1/0) \
-every 10::9+2 t "Co62m" w p lt 8  lw 5 lc rgbcolor colours(7),\
+ t "Co62m" w p lt 8  lw 5 lc rgbcolor colours(7),\
 "Ni-tendl17.grn" \
  u (($2)):($17>1e-13/10?$17*1e6:1/0) \
-every ::2+1 not w l lt 9 lw 5 lc rgbcolor colours(8),\
+ not w l lt 9 lw 5 lc rgbcolor colours(8),\
 "Ni-tendl17.grn" \
  u (($2)):($17>1e-13/10?$17*1e6:1/0) \
-every 10::9+2 t "Co62" w p lt 9  lw 5 lc rgbcolor colours(8),\
+ t "Co62" w p lt 9  lw 5 lc rgbcolor colours(8),\
 "5m_Exp_mod.data"  using ($1/60/24/365.25):2 title "00 Exp" with p lt 1 linecolor rgb "grey" pt 9 ps 1.5, \
      "" using ($1/60/24/365.25):2:3 with errorbars lt 1 linecolor rgb "grey" notitle,\
      
