@@ -1,0 +1,1332 @@
+
+ LOG FILE: inventory.log
+
+ 23:27:38 20 June 2019           
+
+ Log  : FILES file = files
+ Log  : fileroot   = inventory
+
+
+ ------------------------------------------------------------------
+ Files specified by the FILES file and fileroot for this run.
+ ------------------------------------------------------------------
+ The numbers after the unit names are the internal unit numbers.
+
+ input( 5)       inventory.i
+ graph(10)       inventory.gra
+ a2data(11)      /opt/fispact/nuclear_data/decay/a2_2012
+ arrayx(13)      ARRAYX
+ hazards(14)     /opt/fispact/nuclear_data/decay/hazards_2012
+ gnuplot(15)     inventory.plt
+ collapxo(17)    COLLAPX
+ ind_nuc(18)     /opt/fispact/nuclear_data/ENDFB71data/endfb71_index
+ fluxes(20)      fluxes
+ output(38)      inventory.out
+ absorp(39)      /opt/fispact/nuclear_data/decay/abs_2012
+ clear(40)       /opt/fispact/nuclear_data/decay/clear_2012
+ tab1(44)        inventory.tab1
+ tab2(45)        inventory.tab2
+ tab3(46)        inventory.tab3
+ tab4(47)        inventory.tab4
+ runlog(48)      inventory.log
+ sens(50)        inventory.sens
+ xs_endf(52)     /opt/fispact/nuclear_data/ENDFB71data/endfb71-n/gxs-709
+ dk_endf(53)     /opt/fispact/nuclear_data/decay/decay_2012
+ fy_endf(54)     /opt/fispact/nuclear_data/GEFY61data/gefy61_nfy
+ sf_endf(55)     /opt/fispact/nuclear_data/GEFY61data/gefy61_sfy
+ xs_endfb(56)    inventory.bin
+ ggbins(58)      ggbins
+ nucgraph(59)    inventory.grn
+ nucgnu(60)      inventory.pln
+ ------------------------------------------------------------------
+
+
+ MONITOR 1
+ CLOBBER
+ JSON
+ GETXS 1 709
+ GETDECAY 1
+ READGG
+ FISPACT
+ * FNS 5 Minutes Inconel-600
+  load cross-sections
+ 00001: Warning: flux_m:read_flux: 4: 
+        error reading flux spectrum identifier line
+ Log  : parent zai from xs_endf data file =        60000
+ Log  : parent zai from nuclide index     =        60120
+ 00002: Warning: endfmat_m:read_file_1: 2: 
+        zai mismatch for nuclide C12 in nuclide index
+        parent zai from nuclide index used
+ Log  : current za       =         6000
+ Log  : nuclide index za =         6012
+ Log  : mat =          600
+ Log  : mf  =            2
+ Log  : mt  =          151
+ Log  : ns  =          480
+ 00003: Warning: endfmat_m:check_za_awr: 1: 
+        za value in current record does not match nuclide index value
+        parent za from nuclide index used
+ Log  : no_unc =          258
+ 00004: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          317
+ 00005: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          191
+ 00006: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          188
+ 00007: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          161
+ 00008: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          308
+ 00009: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          522
+ 00010: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          535
+ 00011: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          318
+ 00012: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+  load decay data
+ 00013: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00014: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00015: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00016: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00017: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00018: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00019: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00020: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00021: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00022: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00023: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00024: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00025: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00026: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00027: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00028: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00029: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00030: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00031: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00032: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00033: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00034: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00035: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00036: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00037: Warning: nuclide_m:read_decay_new: 1: 
+        decay data for parent Mg 19    NOT found
+        filename= Mg19
+ 00038: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00039: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00040: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00041: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00042: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00043: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00044: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00045: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00046: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00047: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00048: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00049: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00050: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00051: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00052: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00053: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00054: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00055: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00056: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00057: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00058: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00059: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00060: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00061: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00062: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00063: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00064: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00065: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00066: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00067: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00068: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00069: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00070: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00071: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00072: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00073: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00074: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00075: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00076: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00077: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00078: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00079: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00080: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00081: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00082: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00083: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00084: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00085: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00086: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00087: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00088: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00089: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00090: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00091: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00092: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00093: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00094: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00095: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00096: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00097: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00098: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00099: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00100: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00101: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00102: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00103: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00104: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00105: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00106: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00107: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00108: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00109: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00110: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00111: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00112: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00113: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00114: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00115: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00116: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00117: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00118: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00119: Warning: nuclide_m:read_decay_new: 1: 
+        decay data for parent Fe 65m   NOT found
+        filename= Fe65m
+ 00120: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00121: Warning: nuclide_m:read_decay_new: 1: 
+        decay data for parent Cu 81    NOT found
+        filename= Cu81
+ 00122: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00123: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00124: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00125: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00126: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00127: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00128: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00129: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00130: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00131: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00132: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00133: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00134: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00135: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00136: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00137: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00138: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00139: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00140: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00141: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00142: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00143: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00144: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00145: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00146: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00147: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00148: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00149: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00150: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00151: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00152: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00153: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00154: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00155: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00156: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00157: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00158: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00159: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00160: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00161: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00162: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00163: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00164: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00165: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00166: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00167: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00168: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00169: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00170: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00171: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00172: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00173: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00174: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00175: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00176: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00177: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00178: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00179: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00180: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00181: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00182: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00183: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00184: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00185: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00186: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00187: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00188: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00189: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00190: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00191: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00192: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00193: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00194: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00195: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00196: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00197: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00198: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00199: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00200: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00201: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00202: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00203: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00204: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00205: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00206: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00207: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00208: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00209: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00210: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00211: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00212: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00213: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00214: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00215: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00216: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00217: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00218: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00219: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00220: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00221: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00222: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00223: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00224: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00225: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00226: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00227: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00228: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00229: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00230: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00231: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00232: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00233: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00234: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00235: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00236: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00237: Warning: nuclide_m:read_decay_new: 1: 
+        decay data for parent Y  88n   NOT found
+        filename= Y88n
+ 00238: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00239: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00240: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00241: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00242: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00243: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00244: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00245: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00246: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00247: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00248: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00249: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00250: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00251: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00252: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00253: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00254: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00255: Warning: nuclide_m:read_decay_new: 1: 
+        decay data for parent Tc 86m   NOT found
+        filename= Tc86m
+ 00256: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00257: Warning: nuclide_m:read_decay_new: 1: 
+        decay data for parent Rh123    NOT found
+        filename= Rh123
+ 00258: Warning: nuclide_m:read_decay_new: 1: 
+        decay data for parent Pd125    NOT found
+        filename= Pd125
+ 00259: Warning: nuclide_m:read_decay_new: 1: 
+        decay data for parent Pd126    NOT found
+        filename= Pd126
+ 00260: Warning: nuclide_m:read_decay_new: 1: 
+        decay data for parent Ag116n   NOT found
+        filename= Ag116n
+ 00261: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00262: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00263: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00264: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00265: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00266: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00267: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00268: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00269: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00270: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00271: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00272: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00273: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00274: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00275: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00276: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00277: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00278: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00279: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00280: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00281: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00282: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00283: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00284: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00285: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00286: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00287: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00288: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00289: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00290: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00291: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00292: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00293: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00294: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00295: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00296: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00297: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00298: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00299: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00300: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00301: Warning: decay_m:add_line: 2: 
+        discrete spectrum energy too high for gamma energy binning range
+ 00302: Warning: nuclide_m:read_decay_new: 1: 
+        decay data for parent I 145    NOT found
+        filename= I145
+ 00303: Warning: nuclide_m:read_decay_new: 1: 
+        decay data for parent Eu136n   NOT found
+        filename= Eu136n
+ 00304: Warning: nuclide_m:read_decay_new: 1: 
+        decay data for parent Tb135    NOT found
+        filename= Tb135
+ 00305: Warning: nuclide_m:read_decay_new: 1: 
+        decay data for parent Ho155m   NOT found
+        filename= Ho155m
+ 00306: Warning: nuclide_m:read_decay_new: 1: 
+        decay data for parent Pb181m   NOT found
+        filename= Pb181m
+ 00307: Warning: nuclide_m:read_decay_new: 1: 
+        decay data for parent Po205n   NOT found
+        filename= Po205n
+ Log  : nuclide zai =       922420
+ Log  : rtyp =        0.0000000    
+ 00308: Warning: decay_m:read_spectra: 2: 
+        Invalid rtyp in spectrum subsection of decay file
+        irt set to zero
+ 00309: Warning: nuclide_m:read_decay_new: 1: 
+        decay data for parent Es247m   NOT found
+        filename= Es247m
+ 00310: Warning: nuclide_m:read_decay_new: 1: 
+        decay data for parent Fm260    NOT found
+        filename= Fm260
+ 00311: Warning: nuclide_m:read_decay_new: 1: 
+        decay data for parent Lr255m   NOT found
+        filename= Lr255m
+ 00312: Warning: nuclide_m:read_decay_new: 1: 
+        decay data for parent Ds279m   NOT found
+        filename= Ds279m
+  collapse fission yields
+ Log  : nuc_no =         3307
+ Log  : nuclide name = Rn214    
+ 00313: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3308
+ Log  : nuclide name = Rn215    
+ 00314: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3309
+ Log  : nuclide name = Rn216    
+ 00315: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3310
+ Log  : nuclide name = Rn217    
+ 00316: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3311
+ Log  : nuclide name = Rn218    
+ 00317: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3312
+ Log  : nuclide name = Rn219    
+ 00318: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3313
+ Log  : nuclide name = Rn220    
+ 00319: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3314
+ Log  : nuclide name = Rn221    
+ 00320: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3315
+ Log  : nuclide name = Rn222    
+ 00321: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3316
+ Log  : nuclide name = Rn223    
+ 00322: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3317
+ Log  : nuclide name = Rn224    
+ 00323: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3318
+ Log  : nuclide name = Rn225    
+ 00324: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3346
+ Log  : nuclide name = Fr217    
+ 00325: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3347
+ Log  : nuclide name = Fr218    
+ 00326: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3349
+ Log  : nuclide name = Fr219    
+ 00327: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3350
+ Log  : nuclide name = Fr220    
+ 00328: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3351
+ Log  : nuclide name = Fr221    
+ 00329: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3352
+ Log  : nuclide name = Fr222    
+ 00330: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3353
+ Log  : nuclide name = Fr223    
+ 00331: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3354
+ Log  : nuclide name = Fr224    
+ 00332: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3355
+ Log  : nuclide name = Fr225    
+ 00333: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3356
+ Log  : nuclide name = Fr226    
+ 00334: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3357
+ Log  : nuclide name = Fr227    
+ 00335: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3384
+ Log  : nuclide name = Ra219    
+ 00336: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3385
+ Log  : nuclide name = Ra220    
+ 00337: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3386
+ Log  : nuclide name = Ra221    
+ 00338: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3387
+ Log  : nuclide name = Ra222    
+ 00339: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3389
+ Log  : nuclide name = Ra224    
+ 00340: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3390
+ Log  : nuclide name = Ra225    
+ 00341: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3392
+ Log  : nuclide name = Ra227    
+ 00342: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3393
+ Log  : nuclide name = Ra228    
+ 00343: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3394
+ Log  : nuclide name = Ra229    
+ 00344: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3420
+ Log  : nuclide name = Ac222m   
+ 00345: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3421
+ Log  : nuclide name = Ac223    
+ 00346: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3422
+ Log  : nuclide name = Ac224    
+ 00347: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3426
+ Log  : nuclide name = Ac228    
+ 00348: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3427
+ Log  : nuclide name = Ac229    
+ 00349: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3428
+ Log  : nuclide name = Ac230    
+ 00350: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3429
+ Log  : nuclide name = Ac231    
+ 00351: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3450
+ Log  : nuclide name = Th224    
+ 00352: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3451
+ Log  : nuclide name = Th225    
+ 00353: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3452
+ Log  : nuclide name = Th226    
+ 00354: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3479
+ Log  : nuclide name = Pa225    
+ 00355: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3480
+ Log  : nuclide name = Pa226    
+ 00356: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3481
+ Log  : nuclide name = Pa227    
+ 00357: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3482
+ Log  : nuclide name = Pa228    
+ 00358: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3488
+ Log  : nuclide name = Pa234    
+ 00359: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3489
+ Log  : nuclide name = Pa234m   
+ 00360: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3490
+ Log  : nuclide name = Pa235    
+ 00361: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3491
+ Log  : nuclide name = Pa236    
+ 00362: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3492
+ Log  : nuclide name = Pa237    
+ 00363: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3507
+ Log  : nuclide name = U 229    
+ 00364: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3514
+ Log  : nuclide name = U 235m   
+ 00365: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3527
+ Log  : nuclide name = Np230    
+ 00366: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3528
+ Log  : nuclide name = Np231    
+ 00367: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3529
+ Log  : nuclide name = Np232    
+ 00368: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3530
+ Log  : nuclide name = Np233    
+ 00369: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3534
+ Log  : nuclide name = Np236m   
+ 00370: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3538
+ Log  : nuclide name = Np240    
+ 00371: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3539
+ Log  : nuclide name = Np240m   
+ 00372: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3540
+ Log  : nuclide name = Np241    
+ 00373: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3542
+ Log  : nuclide name = Np242m   
+ 00374: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3551
+ Log  : nuclide name = Pu234    
+ 00375: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3552
+ Log  : nuclide name = Pu235    
+ 00376: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3571
+ Log  : nuclide name = Am236    
+ 00377: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3572
+ Log  : nuclide name = Am237    
+ 00378: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3573
+ Log  : nuclide name = Am238    
+ 00379: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3574
+ Log  : nuclide name = Am239    
+ 00380: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3585
+ Log  : nuclide name = Am246m   
+ 00381: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3608
+ Log  : nuclide name = Cm251    
+ 00382: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3613
+ Log  : nuclide name = Bk241    
+ 00383: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3614
+ Log  : nuclide name = Bk242    
+ 00384: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3615
+ Log  : nuclide name = Bk243    
+ 00385: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3616
+ Log  : nuclide name = Bk244    
+ 00386: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3621
+ Log  : nuclide name = Bk248m   
+ 00387: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3624
+ Log  : nuclide name = Bk251    
+ 00388: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3633
+ Log  : nuclide name = Cf243    
+ 00389: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3634
+ Log  : nuclide name = Cf244    
+ 00390: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3635
+ Log  : nuclide name = Cf245    
+ 00391: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3637
+ Log  : nuclide name = Cf247    
+ 00392: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3644
+ Log  : nuclide name = Cf255    
+ 00393: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3658
+ Log  : nuclide name = Es250m   
+ 00394: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3666
+ Log  : nuclide name = Es256m   
+ 00395: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3678
+ Log  : nuclide name = Fm250m   
+ 00396: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+  run reset cross-section
+ DENSITY 8.42
+ MASS 1.0E-3 4
+ NI 75.82
+ MN 0.39
+ FE 7.82
+ CR 15.97
+ MIND 1E3
+ GRAPH 1 2 1
+ 3
+ UNCERTAINTY 2
+ HALF
+ HAZARDS
+  load hazards data
+ FLUX 1.116E+10
+ ATOMS
+  load initial values
+  run output inventory
+ TIME 5.0
+  fill rate equation matrix for cooling
+  fill rate equation matrix for irradiation
+  start pathstep recording
+  initialise dominant analysis
+  test for gas, kerma and dpa data
+ MINS
+ ATOMS
+  run add rateeq for pathways
+  run irradiation init
+  run irradiation step
+  run add pathstep
+  run output inventory
+ FLUX 0.
+ ZERO
+ TIME 36
+ ATOMS
+ TIME 15
+ ATOMS
+ TIME 16
+ ATOMS
+ TIME 15
+ ATOMS
+ TIME 15
+ ATOMS
+ TIME 26
+ ATOMS
+ TIME 33
+ ATOMS
+ TIME 36
+ ATOMS
+ TIME 53
+ ATOMS
+ TIME 66
+ ATOMS
+ TIME 66
+ ATOMS
+ TIME 97
+ ATOMS
+ TIME 127
+ ATOMS
+ TIME 126
+ ATOMS
+ TIME 187
+ ATOMS
+ TIME 246
+ ATOMS
+ TIME 244
+ ATOMS
+ TIME 246
+ ATOMS
+ TIME 428
+ ATOMS
+ TIME 606
+ ATOMS
+ TIME 607
+ ATOMS
+ TIME 36
+ ATOMS
+  run pathways initialisation
+  run pathways uncertainty
+ Log  : Target nuclide = Co 62    
+ Log  :           inventory contribution  =  1.00874915E+02  %
+ 00397: Warning: pathways_m:pathways_output: 1: 
+        inventory sum from paths > 100% inventory from full rate equation
+        reduce main or path TOLERANCE parameters for better accuracy
+ Log  :                path contribution  =  1.00874915E+02  %
+ 00398: Warning: pathways_m:pl_chain: 2: 
+        path contribution > 100%
+        reduce main or path TOLERANCE parameters for better accuracy
+ Log  : Target nuclide = V  53    
+ Log  :           inventory contribution  =  1.00640622E+02  %
+ 00399: Warning: pathways_m:pathways_output: 1: 
+        inventory sum from paths > 100% inventory from full rate equation
+        reduce main or path TOLERANCE parameters for better accuracy
+ Log  :                path contribution  =  1.00640622E+02  %
+ 00400: Warning: pathways_m:pl_chain: 2: 
+        path contribution > 100%
+        reduce main or path TOLERANCE parameters for better accuracy
+  run cooling step
+  run add pathstep
+  run output inventory
+  run pathways uncertainty
+ TIME 15
+ ATOMS
+  run cooling step
+  run add pathstep
+  run output inventory
+  run pathways uncertainty
+ TIME 16
+ ATOMS
+  run cooling step
+  run add pathstep
+  run output inventory
+  run pathways uncertainty
+ TIME 15
+ ATOMS
+  run cooling step
+  run add pathstep
+  run output inventory
+  run pathways uncertainty
+ TIME 15
+ ATOMS
+  run cooling step
+  run add pathstep
+  run output inventory
+  run pathways uncertainty
+ TIME 26
+ ATOMS
+  run cooling step
+  run add pathstep
+  run output inventory
+  run pathways uncertainty
+ TIME 33
+ ATOMS
+  run cooling step
+  run add pathstep
+  run output inventory
+  run pathways uncertainty
+ TIME 36
+ ATOMS
+  run cooling step
+  run add pathstep
+  run output inventory
+  run pathways uncertainty
+ TIME 53
+ ATOMS
+  run cooling step
+  run add pathstep
+  run output inventory
+  run pathways uncertainty
+ TIME 66
+ ATOMS
+  run cooling step
+  run add pathstep
+  run output inventory
+  run pathways uncertainty
+ TIME 66
+ ATOMS
+  run cooling step
+  run add pathstep
+  run output inventory
+  run pathways uncertainty
+ TIME 97
+ ATOMS
+  run cooling step
+  run add pathstep
+  run output inventory
+  run pathways uncertainty
+ TIME 127
+ ATOMS
+  run cooling step
+  run add pathstep
+  run output inventory
+  run pathways uncertainty
+ TIME 126
+ ATOMS
+  run cooling step
+  run add pathstep
+  run output inventory
+  run pathways uncertainty
+ TIME 187
+ ATOMS
+  run cooling step
+  run add pathstep
+  run output inventory
+  run pathways uncertainty
+ TIME 246
+ ATOMS
+  run cooling step
+  run add pathstep
+  run output inventory
+  run pathways uncertainty
+ TIME 244
+ ATOMS
+  run cooling step
+  run add pathstep
+  run output inventory
+  run pathways uncertainty
+ TIME 246
+ ATOMS
+  run cooling step
+  run add pathstep
+  run output inventory
+  run pathways uncertainty
+ TIME 428
+ ATOMS
+  run cooling step
+  run add pathstep
+  run output inventory
+  run pathways uncertainty
+ TIME 606
+ ATOMS
+  run cooling step
+  run add pathstep
+  run output inventory
+  run pathways uncertainty
+ TIME 607
+ ATOMS
+  run cooling step
+  run add pathstep
+  run output inventory
+  run pathways uncertainty
+ END
+ * END
+  run output summary
+  run closedown
+  deallocate and closedown
+
+
+ ------------------------------------------------------------------
+ Files that have been opened during this run.
+ ------------------------------------------------------------------
+ The numbers after the unit names are the internal unit numbers.
+
+ input( 5)       inventory.i
+ graph(10)       inventory.gra
+ arrayx(13)      ARRAYX
+ hazards(14)     /opt/fispact/nuclear_data/decay/hazards_2012
+ gnuplot(15)     inventory.plt
+ collapxo(17)    COLLAPX
+ ind_nuc(18)     /opt/fispact/nuclear_data/ENDFB71data/endfb71_index
+ fluxes(20)      fluxes
+ output(38)      inventory.out
+ absorp(39)      /opt/fispact/nuclear_data/decay/abs_2012
+ runlog(48)      inventory.log
+ xs_endf(52)     /opt/fispact/nuclear_data/ENDFB71data/endfb71-n/gxs-709
+ dk_endf(53)     /opt/fispact/nuclear_data/decay/decay_2012
+ fy_endf(54)     /opt/fispact/nuclear_data/GEFY61data/gefy61_nfy
+ ggbins(58)      ggbins
+ ------------------------------------------------------------------
+
+
+ Log  :                 fispact run time  =   26.417     secs
+ Log  :                 rateeq_init_flux  =  0.21600E-03 secs
+ Log  :                rateeq_irrad_step  =  0.41364E-01 secs
+ Log  :                 rateeq_cool_step  =  0.43052E-01 secs
+ Log  :            output_inventory_step  =   3.6828     secs
+ Log  :                    pathways_step  =  0.17913E-01 secs
+ Log  :                 sensitivity_step  =  0.10000E-05 secs
+
+
+  Error Summary 
+ ------------- 
+  total number of errors/warnings   =    400
+  number of serious errors/warnings =      0
+ 23:28:10 20 June 2019           
+
+ END OF LOG FILE
+

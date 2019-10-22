@@ -1,0 +1,29 @@
+# Run timestamp = 09:23:56 22 October 2019        
+load "ng_style"
+set output "Ni-b8.grn.ps"
+#--------------------------------------------------
+#       Heat Output (kW/kg)
+set title "FNS 5 Mins Ni"
+set xlabel "Decay time (years)"
+set ylabel "Heat Output (kW/kg)"
+set logscale xy
+set xrange [ 1.00000E-06: 1.00000E-03]
+set yrange [ 1.00000E-13: 1.00000E-07]
+#
+set tmargin 3
+set rmargin 12
+plot \
+     "Ni-b8.grn" index   0 using 2:($4)-($3):($4)+($3)  with filledcurves linecolor rgbcolor "#cbcbcb" notitle, \
+     "Ni-b8.grn" index   0 using 2:4 title  "total" with lines linetype 1 linecolor rgbcolor "black", \
+     "Ni-b8.grn" index   0 using 2:4:3 with yerrorbars title "uncert" linetype 1 linecolor rgbcolor "black", \
+     "Ni-b8.grn" index   0 using 2: 5 title  "^{59}Fe" with lines linetype  1 linecolor rgbcolor colours( 1), \
+     "Ni-b8.grn" index   0 using 2: 6 title  "^{60}Co" with lines linetype  2 linecolor rgbcolor colours( 2), \
+     "Ni-b8.grn" index   0 using 2: 7 title  "^{65}Ni" with lines linetype  3 linecolor rgbcolor colours( 3), \
+     "Ni-b8.grn" index   0 using 2: 8 title  "^{57}Co" with lines linetype  4 linecolor rgbcolor colours( 4), \
+     "Ni-b8.grn" index   0 using 2: 9 title  "^{63}Co" with lines linetype  5 linecolor rgbcolor colours( 5), \
+     "Ni-b8.grn" index   0 using 2:10 title  "^{58}Co" with lines linetype  6 linecolor rgbcolor colours( 6), \
+     "Ni-b8.grn" index   0 using 2:11 title  "^{61}Co" with lines linetype  7 linecolor rgbcolor colours( 7), \
+     "Ni-b8.grn" index   0 using 2:12 title  "^{61}Fe" with lines linetype  8 linecolor rgbcolor colours( 8), \
+     "Ni-b8.grn" index   0 using 2:13 title  "^{57}Ni" with lines linetype  9 linecolor rgbcolor colours( 9), \
+     "Ni-b8.grn" index   0 using 2:14 title  "^{62}Co" with lines linetype 10 linecolor rgbcolor colours(10)
+unset output

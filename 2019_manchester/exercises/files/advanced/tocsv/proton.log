@@ -1,0 +1,173 @@
+
+ LOG FILE: proton.log
+
+ 23:29:52 19 June 2019           
+
+ Log  : FILES file = files
+ Log  : fileroot   = proton
+
+
+ ------------------------------------------------------------------
+ Files specified by the FILES file and fileroot for this run.
+ ------------------------------------------------------------------
+ The numbers after the unit names are the internal unit numbers.
+
+ input( 5)       proton.i
+ graph(10)       proton.gra
+ a2data(11)      /opt/fispact/nuclear_data/decay/a2_2012
+ arrayx(13)      ARRAYX
+ hazards(14)     /opt/fispact/nuclear_data/decay/hazards_2012
+ gnuplot(15)     proton.plt
+ collapxo(17)    COLLAPX
+ ind_nuc(18)     /opt/fispact/nuclear_data/decay/decay_2012_index_2012
+ fluxes(20)      fluxes
+ output(38)      proton.out
+ absorp(39)      /opt/fispact/nuclear_data/decay/abs_2012
+ clear(40)       /opt/fispact/nuclear_data/decay/clear_2012
+ tab1(44)        proton.tab1
+ tab2(45)        proton.tab2
+ tab3(46)        proton.tab3
+ tab4(47)        proton.tab4
+ runlog(48)      proton.log
+ sens(50)        proton.sens
+ xs_endf(52)     /opt/fispact/nuclear_data/TENDL2017data/tal2017-p/gxs-162
+ dk_endf(53)     /opt/fispact/nuclear_data/decay/decay_2012
+ fy_endf(54)     /opt/fispact/nuclear_data/UKFY41data/ukfy4_1p
+ xs_endfb(56)    proton.bin
+ nucgraph(59)    proton.grn
+ nucgnu(60)      proton.pln
+ ------------------------------------------------------------------
+
+
+ MONITOR 1
+ CLOBBER
+ JSON
+ SPEK
+ NOERROR
+ PROJECTILE 3
+ GETXS 1 162
+ GETDECAY 1
+ FISPACT
+ * proton irradiation
+  load cross-sections
+ Log  : lr  =            1
+ Log  : mat =          409
+ Log  : mf =            3
+ Log  : mt =            5
+ Log  : ns =            2
+ 00001: Warning: endfmat_m:read_file_3: 2: 
+        Complex reactions (lr>0) not coded for in this version.
+  load decay data
+ Log  : nuclide zai =       922420
+ Log  : rtyp =        0.0000000    
+ 00002: Warning: decay_m:read_spectra: 2: 
+        Invalid rtyp in spectrum subsection of decay file
+        irt set to zero
+  collapse fission yields
+  run reset cross-section
+ DENSITY 1.0
+ MASS 1.0 1
+ Y 100.
+ FLUX 1e20
+ ATOMS
+  load initial values
+  run output inventory
+ TIME 1
+  fill rate equation matrix for cooling
+  fill rate equation matrix for irradiation
+  initialise dominant analysis
+  test for gas, kerma and dpa data
+ MINS
+ ATOMS
+  run irradiation init
+  run irradiation step
+  run output inventory
+ TIME 1
+ MINS
+ ATOMS
+  run irradiation step
+  run output inventory
+ TIME 1
+ MINS
+ ATOMS
+  run irradiation step
+  run output inventory
+ FLUX 0.0
+ TIME 1
+ DAYS
+ ATOMS
+  run cooling step
+  run output inventory
+ TIME 1
+ DAYS
+ ATOMS
+  run cooling step
+  run output inventory
+ TIME 1
+ DAYS
+ ATOMS
+  run cooling step
+  run output inventory
+ TIME 1
+ DAYS
+ ATOMS
+  run cooling step
+  run output inventory
+ TIME 1
+ DAYS
+ ATOMS
+  run cooling step
+  run output inventory
+ TIME 1
+ DAYS
+ ATOMS
+  run cooling step
+  run output inventory
+ TIME 1
+ DAYS
+ ATOMS
+  run cooling step
+  run output inventory
+ END
+ * end
+  run output summary
+  run closedown
+  deallocate and closedown
+
+
+ ------------------------------------------------------------------
+ Files that have been opened during this run.
+ ------------------------------------------------------------------
+ The numbers after the unit names are the internal unit numbers.
+
+ input( 5)       proton.i
+ arrayx(13)      ARRAYX
+ collapxo(17)    COLLAPX
+ ind_nuc(18)     /opt/fispact/nuclear_data/decay/decay_2012_index_2012
+ fluxes(20)      fluxes
+ output(38)      proton.out
+ absorp(39)      /opt/fispact/nuclear_data/decay/abs_2012
+ runlog(48)      proton.log
+ xs_endf(52)     /opt/fispact/nuclear_data/TENDL2017data/tal2017-p/gxs-162
+ dk_endf(53)     /opt/fispact/nuclear_data/decay/decay_2012
+ fy_endf(54)     /opt/fispact/nuclear_data/UKFY41data/ukfy4_1p
+ ------------------------------------------------------------------
+
+
+ Log  :                 fispact run time  =   39.860     secs
+ Log  :                 rateeq_init_flux  =  0.16850E-02 secs
+ Log  :                rateeq_irrad_step  =   2.8009     secs
+ Log  :                 rateeq_cool_step  =  0.19689     secs
+ Log  :            output_inventory_step  =  0.12647     secs
+ Log  :                    pathways_step  =  0.10000E-05 secs
+ Log  :                 sensitivity_step  =  0.20000E-05 secs
+
+
+  Error Summary 
+ ------------- 
+  total number of errors/warnings   =      2
+  number of serious errors/warnings =      0
+ 23:30:32 19 June 2019           
+
+ END OF LOG FILE
+
