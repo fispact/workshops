@@ -21,20 +21,23 @@ with pp.Reader(filename) as output:
             
         fig, ax = plt.subplots()
 
-        bounds = np.linspace(1e-11, 5, 20000, endpoint=True)        
-        line, = ax.plot([], [])
+        gs = output[0].gamma_spectrum
+        energy = [ (gs.boundaries[i] + gs.boundaries[i+1])/2.0 for i in range(0, len(gs.boundaries) -1) ]
+        values = gs.values
+
+        line, = ax.plot(energy, values)
 
         def animate(i):
             gs = output[i].gamma_spectrum
             # overwrite bounds with input since we know that precision causes issues here
-            energy = [ (bounds[j] + bounds[j+1])/2.0 for j in range(0, len(bounds) -1) ]
+            energy = [ (gs.boundaries[j] + gs.boundaries[j+1])/2.0 for j in range(0, len(gs.boundaries) -1) ]
             values = gs.values
             line.set_xdata(energy)  # update the data
             line.set_ydata(values)  # update the data
             return line,
 
-        ani = animation.FuncAnimation(fig, animate, np.arange(0, count),
-                                      interval=200, blit=True)
+        ani = animation.FuncAnimation(fig, animate, np.arange(1, count),
+                                      interval=200, blit=False)
             
         plt.xlim(0, maxEnergy)
         plt.ylim(max(1e1, maxValue*1e-8), max(maxValue*1.2, 1e2))
