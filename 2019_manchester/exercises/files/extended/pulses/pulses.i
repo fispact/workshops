@@ -1,4 +1,4 @@
-B<< -- CONTROL -->>
+<< -- CONTROL -->>
 GETXS 1 709
 GETDECAY 1
 FISPACT
