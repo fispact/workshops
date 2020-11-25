@@ -1,0 +1,31 @@
+# files file
+
+#index of nuclides
+ind_nuc /Users/fosterd/nuclear_data/TENDL2017data/tendl17_decay12_index
+
+#Lib of cross sections
+xs_endf /Users/fosterd/nuclear_data/TENDL2017data/tal2017-n/gxs-709
+
+#fluxes
+fluxes fluxes
+
+# lib decay data
+dk_endf /Users/fosterd/nuclear_data/decay/decay_2012
+
+# Lib of fission data
+fy_endf /Users/fosterd/nuclear_data/GEFY61data/gefy61_nfy
+sf_endf /Users/fosterd/nuclear_data/GEFY61data/gefy61_sfy
+
+# collapsed cros sections data
+collapxi COLLAPX
+collapxo COLLAPX
+
+# gamma attenuation data
+absorp  /Users/fosterd/nuclear_data/decay/abs_2012
+
+# condenced decay and fiss data (in and out)
+arrayx ARRAYX
+
+
+
+
