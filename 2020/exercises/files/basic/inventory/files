@@ -20,7 +20,8 @@ sf_endf              /opt/fispact/nuclear_data/GEFY61data/gefy61_sfy
 
 fluxes               fluxes                                                                                              
 
-collapxo             COLLAPX                                                                                             
+collapxo             COLLAPX 
+collapxi             COLLAPX                                                                                             
 
 arrayx               ARRAYX                                                                                              
 

@@ -1,0 +1,9 @@
+awk 'BEGIN {flag=0};{
+if ($0~/TIME INTERVAL   2/) {flag=1};
+if (flag==1 && $NF~/seconds/) {flag=2;next};
+if (flag==2 && $0~/TOTAL/) {exit}; 
+if (flag==2) {
+if (NF>0) {if ($2~/[#>+]/) {printf "%s \t",$1}
+else {printf "%s%-s \t",$1,$2}; 
+for (i=2;i<=NF;i++) {if ($i~/E+/) {
+printf "%E\n",$i;next}}}}}' inventory.out
