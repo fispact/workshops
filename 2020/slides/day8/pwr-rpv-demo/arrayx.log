@@ -1,0 +1,95 @@
+
+ LOG FILE: arrayx.log
+
+ 11:59:53 2 December 2020        
+
+ Log  : FILES file = files
+ Log  : fileroot   = arrayx
+
+
+ ------------------------------------------------------------------
+ Files specified by the FILES file and fileroot for this run.
+ ------------------------------------------------------------------
+ The numbers after the unit names are the internal unit numbers.
+
+ arb_flux( 3)    fluxes_org
+ input( 5)       arrayx.i
+ graph(10)       arrayx.gra
+ a2data(11)      /FISPACT-II/decay/a2_2012
+ collapxi(12)    COLLAPX
+ arrayx(13)      ARRAYX
+ hazards(14)     /FISPACT-II/decay/hazards_2012
+ gnuplot(15)     arrayx.plt
+ collapxo(17)    COLLAPX
+ ind_nuc(18)     /FISPACT-II/decay/decay_2012_index_2012
+ fluxes(20)      fluxes
+ output(38)      arrayx.out
+ absorp(39)      /FISPACT-II/decay/abs_2012
+ clear(40)       /FISPACT-II/decay/clear_2012
+ tab1(44)        arrayx.tab1
+ tab2(45)        arrayx.tab2
+ tab3(46)        arrayx.tab3
+ tab4(47)        arrayx.tab4
+ runlog(48)      arrayx.log
+ sens(50)        arrayx.sens
+ prob_tab(51)    /FISPACT-II/TENDL2017data/tal2017-n/tp-709-294
+ xs_endf(52)     /FISPACT-II/TENDL2017data/tal2017-n/gxs-709
+ dk_endf(53)     /FISPACT-II/decay/decay_2012
+ fy_endf(54)     /FISPACT-II/GEFY61data/gefy61_nfy
+ sf_endf(55)     /FISPACT-II/GEFY61data/gefy61_sfy
+ xs_endfb(56)    /FISPACT-II/binary_collapses/4.0/compress_TENDL2017_709_294_xs_var.bin
+ nucgraph(59)    arrayx.grn
+ nucgnu(60)      arrayx.pln
+ ------------------------------------------------------------------
+
+
+ MONITOR 1
+ SPEK
+ GETDECAY 1
+ FISPACT
+ * CONDENSE dec_2012, tal2011-n/TENDL-nFY
+  load decay data
+ Log  : nuclide zai =       922420
+ Log  : rtyp =        0.0000000    
+ 00001: Warning: decay_m:read_spectra: 2: 
+        Invalid rtyp in spectrum subsection of decay file
+        irt set to zero
+  run reset cross-section
+ END
+ * END OF RUN
+  run closedown
+  deallocate and closedown
+
+
+ ------------------------------------------------------------------
+ Files that have been opened during this run.
+ ------------------------------------------------------------------
+ The numbers after the unit names are the internal unit numbers.
+
+ input( 5)       arrayx.i
+ arrayx(13)      ARRAYX
+ ind_nuc(18)     /FISPACT-II/decay/decay_2012_index_2012
+ output(38)      arrayx.out
+ runlog(48)      arrayx.log
+ dk_endf(53)     /FISPACT-II/decay/decay_2012
+ fy_endf(54)     /FISPACT-II/GEFY61data/gefy61_nfy
+ ------------------------------------------------------------------
+
+
+ Log  :                 fispact run time  =   14.270     secs
+ Log  :                 rateeq_init_flux  =  0.20000E-05 secs
+ Log  :                rateeq_irrad_step  =   0.0000     secs
+ Log  :                 rateeq_cool_step  =   0.0000     secs
+ Log  :            output_inventory_step  =   0.0000     secs
+ Log  :                    pathways_step  =   0.0000     secs
+ Log  :                 sensitivity_step  =  0.10000E-05 secs
+
+
+  Error Summary 
+ ------------- 
+  total number of errors/warnings   =      1
+  number of serious errors/warnings =      0
+ 12:00:07 2 December 2020        
+
+ END OF LOG FILE
+

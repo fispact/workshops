@@ -1,0 +1,36 @@
+# gamma attenuation data
+absorp  /FISPACT-II/decay/abs_2012
+
+# index of nuclides to be included
+ind_nuc  /FISPACT-II/decay/decay_2012_index_2012
+
+# Library cross section data
+xs_endf /FISPACT-II/TENDL2017data/tal2017-n/gxs-709
+ 
+# Library probability tables for self-shielding
+prob_tab  /FISPACT-II/TENDL2017data/tal2017-n/tp-709-294
+
+#fluxes
+fluxes  fluxes
+arb_flux fluxes_org
+
+# Library decay data
+dk_endf /FISPACT-II/decay/decay_2012
+
+# Library fission  data
+sf_endf  /FISPACT-II/GEFY61data/gefy61_sfy                                                     
+fy_endf  /FISPACT-II/GEFY61data/gefy61_nfy
+
+# Library regulatory data
+hazards /FISPACT-II/decay/hazards_2012
+clear   /FISPACT-II/decay/clear_2012
+a2data  /FISPACT-II/decay/a2_2012
+
+# collapsed cross section data (in and out)
+collapxi  COLLAPX
+collapxo  COLLAPX
+
+# condensed decay and fission data (in and out)
+arrayx  ARRAYX
+
+xs_endfb /FISPACT-II/binary_collapses/4.0/compress_TENDL2017_709_294_xs_var.bin

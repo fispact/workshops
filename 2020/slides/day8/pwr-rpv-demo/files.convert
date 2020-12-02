@@ -1,0 +1,8 @@
+# index of nuclides to be included
+#
+ind_nuc  /FISPACT-II/decay/decay_2012_index_2012
+#
+# fluxes
+fluxes  fluxes
+arb_flux  arb_flux
+

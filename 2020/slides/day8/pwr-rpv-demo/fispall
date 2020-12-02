@@ -1,0 +1,23 @@
+#!/bin/csh
+#
+#
+# run test cases
+fispact li
+fispact be
+fispact al
+fispact sic
+fispact v
+fispact cr
+fispact fe
+fispact fe56
+fispact eurofer
+fispact ss316
+fispact ni
+fispact cu
+fispact cucrzr
+fispact zr
+fispact nbsn
+fispact w
+fispact wc
+fispact wre
+#

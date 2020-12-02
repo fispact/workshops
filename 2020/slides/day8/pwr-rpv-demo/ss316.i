@@ -1,0 +1,39 @@
+<< -----get nuclear data----- >>
+CLOBBER
+GETXS 0
+GETDECAY 0
+FISPACT
+* SS316
+<< -----set initial conditions----- >>
+DENSITY 8.2
+MASS 1.0 8
+Fe 64.65
+C 0.8
+Ni 12.0
+Cr 17.0
+Si 1.0
+Mn 2.0
+Mo 2.5
+Ta 0.05
+MIND 1.E5
+HAZA
+CLEAR
+HALF
+FLUX 1.1234E+11
+ATOMS
+<< -----irradiation phase----- >>
+TIME 1.0 YEARS
+ATOMS
+<< -----cooling phase----- >>
+FLUX 0.
+ZERO
+TIME 1 DAYS ATOMS
+TIME 9 DAYS ATOMS
+TIME 90 DAYS ATOMS
+TIME 265.25 DAYS ATOMS
+TIME 9 YEARS ATOMS
+TIME 90 YEARS ATOMS
+TIME 900 YEARS ATOMS
+END
+* END
+

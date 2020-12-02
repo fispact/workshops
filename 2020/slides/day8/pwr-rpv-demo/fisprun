@@ -1,0 +1,15 @@
+#!/bin/csh
+#
+# 
+# clean up
+rm -f *.out *.log COLLAPX ARRAYX >&/dev/null
+#
+#
+fispact convert files.convert
+fispact collapx
+fispact arrayx
+fispact printlib
+# 
+#
+# run test cases
+#
