@@ -1,0 +1,43 @@
+def setInputDatabyFUEL( nuclideZAI, nuclideATOMS, fluxspectrum, runlabel  ):
+    # initialsie input data
+    ip = pf.InputData(m)
+    ip.setname(runlabel )  
+    # set flux
+    ip.setflux(pf.groups.G709(), fluxspectrum)
+    ip.setfluxwallloading(1.0)
+    ip.setfluxname("{} flux".format(runlabel))
+    # set material
+    ip.setmasstotal(1.0)
+    # assume W density
+    ip.setdensity(19.274)
+    # for each nuclide add atoms
+    for i in range(len(nuclideZAI)):
+        ip.appendfuel( nuclideZAI[i], nuclideATOMS[i])
+    # set irradiation schedule - 5mins at 1.1E14 n/cm2/s
+    ip.appendschedule(10*pf.util.MIN_TO_SEC(), 1.3E14)
+    for _ in range(10):
+        ip.appendschedule(pf.util.YEAR_TO_SEC(), 0.0)
+    return ip
+
+
+# ==================================================================
+
+runname2 = "run2"
+# load first spectrum 
+flux2 = readfluxfile( "fluxes.2" )
+
+
+# get input from output
+zais = [] 
+atoms = []
+finalnuclidesobj = output1.getinventorynuclides(  output1.getnrofinventoryentries()-1  )
+for nuc in finalnuclidesobj:
+    zais.append(nuc.zai)
+    atoms.append(nuc.atoms)
+
+# set input
+input2 = setInputDatabyFUEL( zais, atoms, flux2, runname2  )
+
+# run FISPACT 
+output2 = runFISPACT(input2, nucleardata)
+pf.io.to_file(output2, m, "{}.json".format(runname2) )

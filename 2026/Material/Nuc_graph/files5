@@ -1,0 +1,37 @@
+# gnuplot style file
+# an example can be found in systems_tests/Tst_mat
+
+# gamma attenuation data
+absorp  /Users/fosterd/nuclear_data/decay/abs_2012
+
+# index of nuclides to be included
+ind_nuc  /Users/fosterd/nuclear_data/TENDL2015data/tendl15_decay12_index
+
+# Library cross section data
+xs_endf /Users/fosterd/nuclear_data/TENDL2015data/tal2015-n/gxs-709
+
+# Binary cross section data
+xs_endfb /Users/fosterd/nuclear_data/bin/tal2015-n.bin
+
+# Library probability tables for self-shielding
+prob_tab  /Users/fosterd/nuclear_data/TENDL2015data/tal2015-n/tp-709-294
+
+# fluxes
+fluxes  fluxes
+
+# Library decay data
+dk_endf /Users/fosterd/nuclear_data/decay/decay_2012
+
+# Library fission data
+fy_endf /Users/fosterd/nuclear_data/GEFY61data/gefy61_nfy
+
+# Spontaneous fission data
+sf_endf /Users/fosterd/nuclear_data/GEFY61data/gefy61_sfy
+
+
+# collapsed cross section data (in and out)
+collapxi  COLLAPX
+collapxo  COLLAPX
+
+# condensed decay and fission data (in and out)
+arrayx  ARRAYX

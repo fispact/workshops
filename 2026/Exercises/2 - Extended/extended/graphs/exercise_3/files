@@ -1,0 +1,31 @@
+# index of nuclides to be included
+ind_nuc  /opt/fispact/nuclear_data/JEFF33data/jeff33_index
+
+# Library cross section data
+xs_endf /opt/fispact/nuclear_data/JEFF33data/jeff33-n/gxs-709
+ 
+# Library probability tables for self-shielding
+prob_tab  /opt/fispact/nuclear_data/JEFF33data/jeff33-n/tp-709-294
+
+#fluxes
+fluxes  fluxes
+
+# Library decay data
+dk_endf /opt/fispact/nuclear_data/JEFF33data/decay
+
+
+
+# Library regulatory data
+hazards /opt/fispact/nuclear_data/decay/hazards_2012
+clear   /opt/fispact/nuclear_data/decay/clear_2012
+a2data  /opt/fispact/nuclear_data/decay/a2_2012
+
+# gamma attenuation data
+absorp  /opt/fispact/nuclear_data/decay/abs_2012
+
+# collapsed cross section data (in and out)
+collapxi  COLLAPX
+collapxo  COLLAPX
+
+# condensed decay and fission data (in and out)
+arrayx  ARRAYX

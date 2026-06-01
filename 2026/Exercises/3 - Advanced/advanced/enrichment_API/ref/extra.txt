@@ -1,0 +1,8 @@
+
+pf.elementaldata.setnaturalisotopeabundances( m, pf.util.z_from_element(m, "Li"), 
+                                            [ pf.util.zai_from_name(m, "Li6"), pf.util.zai_from_name(m, "Li7")], 
+                                            [0.6,0.4]   )
+label2 = "enriched"
+input2 = setInputDatabyMASS( "Li", flux, label2 )
+output2 = runFISPACT(input2, nucleardata)
+pf.io.to_file(output2, m, "{}.json".format(label2) )

@@ -1,0 +1,58 @@
+
+ LOG FILE: extract.log
+
+ 14:28:15 17 June 2019           
+
+ Log  : FILES file = files.local
+ Log  : fileroot   = extract
+
+
+ ------------------------------------------------------------------
+ Files specified by the FILES file and fileroot for this run.
+ ------------------------------------------------------------------
+ The numbers after the unit names are the internal unit numbers.
+
+ input( 5)       extract.i
+ graph(10)       extract.gra
+ gnuplot(15)     extract.plt
+ ind_nuc(18)     /Volumes/Pegasus2/Code/FISPACT-II//nuclear_data/decay/decay_2012_index_2012
+ fluxes(20)      fluxes
+ output(38)      extract.out
+ tab1(44)        extract.tab1
+ tab2(45)        extract.tab2
+ tab3(46)        extract.tab3
+ tab4(47)        extract.tab4
+ runlog(48)      extract.log
+ sens(50)        extract.sens
+ xs_endf(52)     /Volumes/Pegasus2/Code/FISPACT-II//nuclear_data/TENDL2017data/tal2017-n/gxs-709
+ xs_endfb(56)    extract.bin
+ nucgraph(59)    extract.grn
+ nucgnu(60)      extract.pln
+ ------------------------------------------------------------------
+
+
+
+
+ ------------------------------------------------------------------
+ Files that have been opened during this run.
+ ------------------------------------------------------------------
+ The numbers after the unit names are the internal unit numbers.
+
+ fluxes(20)      fluxes
+ output(38)      extract.out
+ runlog(48)      extract.log
+ xs_endf(52)     /Volumes/Pegasus2/Code/FISPACT-II//nuclear_data/TENDL2017data/tal2017-n/gxs-709
+ ------------------------------------------------------------------
+
+
+ Log  :         extract_xs_endf run time  =  0.91950E-02 secs
+
+
+  Error Summary 
+ ------------- 
+  total number of errors/warnings   =      0
+  number of serious errors/warnings =      0
+ 14:28:15 17 June 2019           
+
+ END OF LOG FILE
+

@@ -1,0 +1,2152 @@
+
+ LOG FILE: first.log
+
+ 17:28:58 18 June 2019           
+
+ Log  : FILES file = files.1
+ Log  : fileroot   = first
+
+
+ ------------------------------------------------------------------
+ Files specified by the FILES file and fileroot for this run.
+ ------------------------------------------------------------------
+ The numbers after the unit names are the internal unit numbers.
+
+ input( 5)       first.i
+ graph(10)       first.gra
+ a2data(11)      /opt/fispact/nuclear_data/decay/a2_2012
+ arrayx(13)      ARRAYX.1
+ hazards(14)     /opt/fispact/nuclear_data/decay/hazards_2012
+ gnuplot(15)     first.plt
+ collapxo(17)    COLLAPX.1
+ ind_nuc(18)     /opt/fispact/nuclear_data/decay/decay_2012_index_2012
+ fluxes(20)      fluxes.1
+ output(38)      first.out
+ absorp(39)      /opt/fispact/nuclear_data/decay/abs_2012
+ clear(40)       /opt/fispact/nuclear_data/decay/clear_2012
+ tab1(44)        first.tab1
+ tab2(45)        first.tab2
+ tab3(46)        first.tab3
+ tab4(47)        first.tab4
+ runlog(48)      first.log
+ sens(50)        first.sens
+ xs_endf(52)     /opt/fispact/nuclear_data/TENDL2017data/tal2017-n/gxs-709
+ dk_endf(53)     /opt/fispact/nuclear_data/decay/decay_2012
+ fy_endf(54)     /opt/fispact/nuclear_data/GEFY61data/gefy61_nfy
+ sf_endf(55)     /opt/fispact/nuclear_data/GEFY61data/gefy61_sfy
+ xs_endfb(56)    tal2017-n.bin
+ nucgraph(59)    first.grn
+ nucgnu(60)      first.pln
+ ------------------------------------------------------------------
+
+
+ MONITOR 1
+ CLOBBER
+ JSON
+ SPEK
+ GETXS 1 709
+ GETDECAY 1
+ FISPACT
+ * irradiation 1
+  load cross-sections
+ Log  : no_unc =          154
+ 00001: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          634
+ 00002: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          634
+ 00003: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          185
+ 00004: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          181
+ 00005: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          181
+ 00006: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          160
+ 00007: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          165
+ 00008: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =         1567
+ 00009: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          189
+ 00010: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          181
+ 00011: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          196
+ 00012: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          191
+ 00013: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          199
+ 00014: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          169
+ 00015: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          168
+ 00016: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          192
+ 00017: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          195
+ 00018: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          195
+ 00019: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          195
+ 00020: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          170
+ 00021: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          161
+ 00022: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          195
+ 00023: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          195
+ 00024: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          187
+ 00025: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          195
+ 00026: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          180
+ 00027: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          172
+ 00028: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          161
+ 00029: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          184
+ 00030: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          193
+ 00031: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          192
+ 00032: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          192
+ 00033: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          168
+ 00034: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          171
+ 00035: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          185
+ 00036: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          193
+ 00037: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          195
+ 00038: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          184
+ 00039: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          185
+ 00040: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          174
+ 00041: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          178
+ 00042: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          170
+ 00043: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          188
+ 00044: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          178
+ 00045: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          184
+ 00046: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          189
+ 00047: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          164
+ 00048: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          184
+ 00049: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          184
+ 00050: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          190
+ 00051: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          184
+ 00052: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          161
+ 00053: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          174
+ 00054: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          193
+ 00055: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          172
+ 00056: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          184
+ 00057: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          186
+ 00058: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          186
+ 00059: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          186
+ 00060: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          185
+ 00061: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          186
+ 00062: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          184
+ 00063: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          173
+ 00064: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          184
+ 00065: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          189
+ 00066: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          184
+ 00067: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          178
+ 00068: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          187
+ 00069: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          178
+ 00070: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          183
+ 00071: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          186
+ 00072: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          183
+ 00073: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          172
+ 00074: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          188
+ 00075: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          166
+ 00076: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          160
+ 00077: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          178
+ 00078: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          167
+ 00079: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          179
+ 00080: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          164
+ 00081: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          179
+ 00082: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          159
+ 00083: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          180
+ 00084: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          167
+ 00085: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          184
+ 00086: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          193
+ 00087: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          170
+ 00088: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          175
+ 00089: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          184
+ 00090: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          162
+ 00091: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          162
+ 00092: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          167
+ 00093: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          180
+ 00094: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          156
+ 00095: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          178
+ 00096: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          174
+ 00097: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          164
+ 00098: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          178
+ 00099: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          178
+ 00100: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          158
+ 00101: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          167
+ 00102: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          183
+ 00103: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          168
+ 00104: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          184
+ 00105: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          184
+ 00106: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          160
+ 00107: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          186
+ 00108: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          176
+ 00109: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          186
+ 00110: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          178
+ 00111: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          176
+ 00112: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          184
+ 00113: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          180
+ 00114: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          193
+ 00115: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          193
+ 00116: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          153
+ 00117: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          174
+ 00118: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          185
+ 00119: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          183
+ 00120: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          169
+ 00121: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          183
+ 00122: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          179
+ 00123: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          184
+ 00124: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          170
+ 00125: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          181
+ 00126: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          175
+ 00127: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          153
+ 00128: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          166
+ 00129: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          178
+ 00130: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          157
+ 00131: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          157
+ 00132: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          158
+ 00133: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          160
+ 00134: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          187
+ 00135: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          184
+ 00136: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          185
+ 00137: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          188
+ 00138: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          160
+ 00139: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          166
+ 00140: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          184
+ 00141: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          172
+ 00142: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          175
+ 00143: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          153
+ 00144: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          158
+ 00145: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          180
+ 00146: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          187
+ 00147: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          171
+ 00148: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          186
+ 00149: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          162
+ 00150: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          189
+ 00151: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          179
+ 00152: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          182
+ 00153: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          167
+ 00154: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          155
+ 00155: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          159
+ 00156: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          184
+ 00157: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          184
+ 00158: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          157
+ 00159: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          174
+ 00160: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          157
+ 00161: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          158
+ 00162: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          154
+ 00163: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          164
+ 00164: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          187
+ 00165: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          157
+ 00166: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          184
+ 00167: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          170
+ 00168: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          185
+ 00169: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          163
+ 00170: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          186
+ 00171: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          153
+ 00172: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          184
+ 00173: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          184
+ 00174: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          160
+ 00175: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          184
+ 00176: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          173
+ 00177: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          173
+ 00178: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          156
+ 00179: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          158
+ 00180: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          159
+ 00181: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          159
+ 00182: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          177
+ 00183: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          157
+ 00184: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          159
+ 00185: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          172
+ 00186: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          174
+ 00187: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          174
+ 00188: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          166
+ 00189: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          178
+ 00190: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          178
+ 00191: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          156
+ 00192: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          184
+ 00193: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          184
+ 00194: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          172
+ 00195: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          189
+ 00196: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          156
+ 00197: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          157
+ 00198: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          157
+ 00199: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          177
+ 00200: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          184
+ 00201: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          162
+ 00202: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          166
+ 00203: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          168
+ 00204: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          172
+ 00205: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          164
+ 00206: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          157
+ 00207: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          153
+ 00208: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          184
+ 00209: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          184
+ 00210: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          170
+ 00211: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          155
+ 00212: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          157
+ 00213: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          178
+ 00214: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          158
+ 00215: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          180
+ 00216: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          157
+ 00217: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          157
+ 00218: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          169
+ 00219: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          172
+ 00220: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          163
+ 00221: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          157
+ 00222: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          184
+ 00223: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          169
+ 00224: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          184
+ 00225: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          156
+ 00226: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          185
+ 00227: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          159
+ 00228: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          159
+ 00229: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          154
+ 00230: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          169
+ 00231: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          156
+ 00232: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          175
+ 00233: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          158
+ 00234: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          153
+ 00235: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          176
+ 00236: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          189
+ 00237: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          184
+ 00238: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          155
+ 00239: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          184
+ 00240: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          153
+ 00241: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          185
+ 00242: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          158
+ 00243: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          159
+ 00244: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          172
+ 00245: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          157
+ 00246: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          156
+ 00247: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          155
+ 00248: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          159
+ 00249: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          157
+ 00250: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          165
+ 00251: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          155
+ 00252: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          164
+ 00253: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          159
+ 00254: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          185
+ 00255: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          169
+ 00256: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          156
+ 00257: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          181
+ 00258: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          157
+ 00259: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          180
+ 00260: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          181
+ 00261: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          156
+ 00262: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          155
+ 00263: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          159
+ 00264: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          157
+ 00265: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          154
+ 00266: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          165
+ 00267: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          155
+ 00268: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          177
+ 00269: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          156
+ 00270: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          174
+ 00271: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          174
+ 00272: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          174
+ 00273: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          155
+ 00274: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          177
+ 00275: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          171
+ 00276: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          154
+ 00277: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          176
+ 00278: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          157
+ 00279: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          166
+ 00280: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          160
+ 00281: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          161
+ 00282: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          165
+ 00283: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          165
+ 00284: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          158
+ 00285: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          159
+ 00286: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          174
+ 00287: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          177
+ 00288: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          160
+ 00289: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          157
+ 00290: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          157
+ 00291: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          159
+ 00292: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          171
+ 00293: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          175
+ 00294: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          153
+ 00295: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          159
+ 00296: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          160
+ 00297: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          174
+ 00298: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          178
+ 00299: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          153
+ 00300: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          155
+ 00301: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          157
+ 00302: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          157
+ 00303: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          156
+ 00304: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          158
+ 00305: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          159
+ 00306: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          177
+ 00307: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          180
+ 00308: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          157
+ 00309: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          158
+ 00310: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          158
+ 00311: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          158
+ 00312: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          158
+ 00313: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          156
+ 00314: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          171
+ 00315: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          165
+ 00316: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          153
+ 00317: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          173
+ 00318: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          164
+ 00319: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          160
+ 00320: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          172
+ 00321: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          181
+ 00322: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          178
+ 00323: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          166
+ 00324: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          158
+ 00325: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          173
+ 00326: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          158
+ 00327: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          172
+ 00328: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          167
+ 00329: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          194
+ 00330: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          183
+ 00331: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          193
+ 00332: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          178
+ 00333: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          184
+ 00334: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          195
+ 00335: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          194
+ 00336: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          157
+ 00337: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          158
+ 00338: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          172
+ 00339: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          183
+ 00340: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          185
+ 00341: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          184
+ 00342: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          161
+ 00343: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          164
+ 00344: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          171
+ 00345: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          161
+ 00346: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          170
+ 00347: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          153
+ 00348: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          160
+ 00349: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          172
+ 00350: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          164
+ 00351: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          183
+ 00352: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          188
+ 00353: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          184
+ 00354: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          188
+ 00355: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          157
+ 00356: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          156
+ 00357: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          178
+ 00358: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          179
+ 00359: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          177
+ 00360: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          176
+ 00361: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          180
+ 00362: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          175
+ 00363: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          153
+ 00364: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          155
+ 00365: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          159
+ 00366: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          184
+ 00367: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          157
+ 00368: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          185
+ 00369: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          158
+ 00370: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          185
+ 00371: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          159
+ 00372: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          185
+ 00373: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          165
+ 00374: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          157
+ 00375: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          157
+ 00376: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          166
+ 00377: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          158
+ 00378: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          162
+ 00379: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          159
+ 00380: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          167
+ 00381: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          157
+ 00382: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          166
+ 00383: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          160
+ 00384: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          161
+ 00385: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          178
+ 00386: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          156
+ 00387: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          177
+ 00388: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          156
+ 00389: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          177
+ 00390: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          156
+ 00391: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          178
+ 00392: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          163
+ 00393: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          178
+ 00394: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          171
+ 00395: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          167
+ 00396: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          169
+ 00397: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          167
+ 00398: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          167
+ 00399: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          172
+ 00400: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          156
+ 00401: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          164
+ 00402: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          160
+ 00403: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          154
+ 00404: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          156
+ 00405: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          159
+ 00406: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          153
+ 00407: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          167
+ 00408: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          174
+ 00409: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          154
+ 00410: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          156
+ 00411: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          167
+ 00412: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          169
+ 00413: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          153
+ 00414: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          154
+ 00415: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          154
+ 00416: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          164
+ 00417: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          167
+ 00418: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          158
+ 00419: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          161
+ 00420: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          155
+ 00421: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          164
+ 00422: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          172
+ 00423: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          157
+ 00424: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          164
+ 00425: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          163
+ 00426: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          167
+ 00427: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          154
+ 00428: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          160
+ 00429: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          160
+ 00430: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          163
+ 00431: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          162
+ 00432: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          163
+ 00433: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          157
+ 00434: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          158
+ 00435: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          159
+ 00436: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          153
+ 00437: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          168
+ 00438: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          153
+ 00439: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          159
+ 00440: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          169
+ 00441: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          175
+ 00442: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          157
+ 00443: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          162
+ 00444: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          164
+ 00445: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          160
+ 00446: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          158
+ 00447: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          157
+ 00448: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          156
+ 00449: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          158
+ 00450: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          157
+ 00451: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          176
+ 00452: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          168
+ 00453: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          158
+ 00454: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          157
+ 00455: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          172
+ 00456: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          170
+ 00457: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          185
+ 00458: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          174
+ 00459: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          184
+ 00460: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          170
+ 00461: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          172
+ 00462: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          166
+ 00463: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          173
+ 00464: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          162
+ 00465: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          157
+ 00466: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          184
+ 00467: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          180
+ 00468: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          169
+ 00469: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          176
+ 00470: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          162
+ 00471: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          169
+ 00472: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          153
+ 00473: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          170
+ 00474: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          187
+ 00475: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          185
+ 00476: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          189
+ 00477: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          159
+ 00478: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          184
+ 00479: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          159
+ 00480: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          180
+ 00481: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          159
+ 00482: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          178
+ 00483: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          153
+ 00484: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          173
+ 00485: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          159
+ 00486: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          158
+ 00487: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          163
+ 00488: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          158
+ 00489: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          154
+ 00490: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          154
+ 00491: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          179
+ 00492: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          156
+ 00493: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          184
+ 00494: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          167
+ 00495: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          159
+ 00496: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+ Log  : no_unc =          475
+ 00497: Warning: endfmat_m:var_lb5: 1: 
+        Too many uncertainty energy bins
+        Workspace array sizes increased
+  load decay data
+ Log  : nuclide zai =       922420
+ Log  : rtyp =        0.0000000    
+ 00498: Warning: decay_m:read_spectra: 2: 
+        Invalid rtyp in spectrum subsection of decay file
+        irt set to zero
+  collapse fission yields
+ Log  : nuc_no =         3347
+ Log  : nuclide name = Rn214    
+ 00499: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3348
+ Log  : nuclide name = Rn215    
+ 00500: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3349
+ Log  : nuclide name = Rn216    
+ 00501: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3350
+ Log  : nuclide name = Rn217    
+ 00502: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3351
+ Log  : nuclide name = Rn218    
+ 00503: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3387
+ Log  : nuclide name = Fr217    
+ 00504: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3388
+ Log  : nuclide name = Fr218    
+ 00505: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3390
+ Log  : nuclide name = Fr219    
+ 00506: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3425
+ Log  : nuclide name = Ra219    
+ 00507: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3426
+ Log  : nuclide name = Ra220    
+ 00508: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+ Log  : nuc_no =         3498
+ Log  : nuclide name = Th229m   
+ 00509: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found
+  run reset cross-section
+ MASS 1.0 1
+ W 100.0
+ TAB1 21
+ FLUX 1.1e14
+ ATOMS
+  load initial values
+  run output inventory
+ TIME 5
+  fill rate equation matrix for cooling
+  fill rate equation matrix for irradiation
+  initialise dominant analysis
+  test for gas, kerma and dpa data
+ MINS
+ ATOMS
+  run irradiation init
+  run irradiation step
+  run output inventory
+ END
+ * end
+  run output summary
+  run closedown
+  deallocate and closedown
+
+
+ ------------------------------------------------------------------
+ Files that have been opened during this run.
+ ------------------------------------------------------------------
+ The numbers after the unit names are the internal unit numbers.
+
+ input( 5)       first.i
+ arrayx(13)      ARRAYX.1
+ collapxo(17)    COLLAPX.1
+ ind_nuc(18)     /opt/fispact/nuclear_data/decay/decay_2012_index_2012
+ fluxes(20)      fluxes.1
+ output(38)      first.out
+ absorp(39)      /opt/fispact/nuclear_data/decay/abs_2012
+ tab1(44)        first.tab1
+ runlog(48)      first.log
+ xs_endf(52)     /opt/fispact/nuclear_data/TENDL2017data/tal2017-n/gxs-709
+ dk_endf(53)     /opt/fispact/nuclear_data/decay/decay_2012
+ fy_endf(54)     /opt/fispact/nuclear_data/GEFY61data/gefy61_nfy
+ ------------------------------------------------------------------
+
+
+ Log  :                 fispact run time  =   88.275     secs
+ Log  :                 rateeq_init_flux  =  0.32100E-03 secs
+ Log  :                rateeq_irrad_step  =  0.53056     secs
+ Log  :                 rateeq_cool_step  =  0.20000E-05 secs
+ Log  :            output_inventory_step  =  0.14373E-01 secs
+ Log  :                    pathways_step  =  0.20000E-05 secs
+ Log  :                 sensitivity_step  =  0.20000E-05 secs
+
+
+  Error Summary 
+ ------------- 
+  total number of errors/warnings   =    509
+  number of serious errors/warnings =      0
+ 17:30:38 18 June 2019           
+
+ END OF LOG FILE
+

@@ -1,0 +1,73 @@
+
+ LOG FILE: 66.to.709.log
+
+ 15:56:21 17 June 2019           
+
+ Log  : FILES file = files.66.to.709
+ Log  : fileroot   = 66.to.709
+
+
+ ------------------------------------------------------------------
+ Files specified by the FILES file and fileroot for this run.
+ ------------------------------------------------------------------
+ The numbers after the unit names are the internal unit numbers.
+
+ arb_flux( 3)    fluxes66.in
+ input( 5)       66.to.709.i
+ graph(10)       66.to.709.gra
+ gnuplot(15)     66.to.709.plt
+ ind_nuc(18)     /opt/FISPACT-II/nuclear_data/decay/decay_2012_index_2012
+ fluxes(20)      fluxes709.out
+ output(38)      66.to.709.out
+ tab1(44)        66.to.709.tab1
+ tab2(45)        66.to.709.tab2
+ tab3(46)        66.to.709.tab3
+ tab4(47)        66.to.709.tab4
+ runlog(48)      66.to.709.log
+ sens(50)        66.to.709.sens
+ xs_endfb(56)    66.to.709.bin
+ nucgraph(59)    66.to.709.grn
+ nucgnu(60)      66.to.709.pln
+ ------------------------------------------------------------------
+
+
+ CLOBBER
+ GRPCONVERT 66 709
+ FISPACT
+ * convert group 66 to 709
+  run flux convert
+  run closedown
+  deallocate and closedown
+
+
+ ------------------------------------------------------------------
+ Files that have been opened during this run.
+ ------------------------------------------------------------------
+ The numbers after the unit names are the internal unit numbers.
+
+ arb_flux( 3)    fluxes66.in
+ input( 5)       66.to.709.i
+ ind_nuc(18)     /opt/FISPACT-II/nuclear_data/decay/decay_2012_index_2012
+ fluxes(20)      fluxes709.out
+ output(38)      66.to.709.out
+ runlog(48)      66.to.709.log
+ ------------------------------------------------------------------
+
+
+ Log  :                 fispact run time  =  0.26798E-01 secs
+ Log  :                 rateeq_init_flux  =  0.30000E-05 secs
+ Log  :                rateeq_irrad_step  =  0.10000E-05 secs
+ Log  :                 rateeq_cool_step  =  0.10000E-05 secs
+ Log  :            output_inventory_step  =  0.20000E-05 secs
+ Log  :                    pathways_step  =  0.10000E-05 secs
+ Log  :                 sensitivity_step  =  0.10000E-05 secs
+
+
+  Error Summary 
+ ------------- 
+  total number of errors/warnings   =      0
+  number of serious errors/warnings =      0
+ 15:56:21 17 June 2019           
+
+ END OF LOG FILE
+

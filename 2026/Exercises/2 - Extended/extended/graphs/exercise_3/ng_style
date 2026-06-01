@@ -1,0 +1,50 @@
+
+set term postscript color enhanced font ",18"
+ 
+reset
+set logscale x
+set colors classic
+set title offset 0,2
+
+#lw 5 
+set lt 1 dt 1 lw 0.8
+set lt 2 dt (2.5,1.25)
+set lt 3 dt (1.25,1.5)
+set lt 4 dt (0.75,1.0)
+set lt 5 dt (3.5,1,0.5,1)
+set lt 6 dt (1.5,1.25,0.5,1.25)
+set lt 7 dt (1.25,1.25,1.25,3.75)
+set lt 8 dt (0.5,1,3,1,0.5,1)
+set lt 9 dt (1.25,1.25,1.25,1.25,1.25,1.25,1.25,2.5) 
+set lt 10 dt 1 lw 0.8
+set lt 11 dt (2.5,1.25)
+set lt 12 dt (1.25,1.5)
+set lt 13 dt (0.75,1.0)
+set lt 14 dt (3.5,1,0.5,1)
+set lt 15 dt (1.5,1.25,0.5,1.25)
+set lt 16 dt (1.25,1.25,1.25,3.75)
+set lt 17 dt (0.5,1,3,1,0.5,1)
+set lt 18 dt (1.25,1.25,1.25,1.25,1.25,1.25,1.25,2.5)
+
+
+set border lt -1 lw 1.5
+#set size square
+#set size ratio 0.9
+set size ratio 0.67
+set xl "Decay time (years)"
+set logscale y
+set xrange [1e-6:1.0E+04]
+colours(n)=word("web-green magenta red navy web-blue dark-grey dark-goldenrod cyan light-green purple steelblue orange dark-red midnight-blue light-goldenrod aquamarine plum light-blue midnight-blue yellow dark-violet dark-olivegreen bisque greenyellow salmon light-red sea-green sandybrown grey cyan web-green magenta black red navy web-blue dark-grey dark-goldenrod cyan light-green purple steelblue dark-cyan orange dark-red light-goldenrod aquamarine plum light-blue midnight-blue yellow dark-violet dark-olivegreen bisque greenyellow salmon light-red sea-green sandybrown grey cyan purple ",n)
+
+set xtics 100 format "10^{%T}" out mirror
+set ytics 100 format "10^{%T}" out mirror
+set key at graph 1.0,graph 1.0 left reverse Left samplen 1.4 vertical maxrows 14 maxcols 2 width -1 font ",18"
+
+
+set label 100 at 1.9013e-6,graph(1.04) "Min" tc rgbcolor "blue" center font ",18"
+set arrow 100 from 1.9013e-6,graph(0.98) to 1.9013e-6,graph(1.02) nohead
+set label 101 at 1.1408e-4,graph(1.08) "Hour" tc rgbcolor "blue" center font ",18"
+set arrow 101 from 1.1408e-4,graph(0.98) to 1.1408e-4,graph(1.05) nohead
+set label 102 at 2.7379e-3,graph(1.04) "Day" tc rgbcolor "blue" center font ",18"
+set arrow 102 from 2.7379e-3,graph(0.98) to 2.7379e-3,graph(1.02) nohead
+

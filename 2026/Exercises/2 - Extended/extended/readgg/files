@@ -1,0 +1,34 @@
+# index file - for ENDFB/V.II
+ind_nuc /opt/fispact/nuclear_data/ENDFB71data/endfb71_index
+
+# decay data base directory
+dk_endf /opt/fispact/nuclear_data/decay/decay_2012
+
+# cross section data
+xs_endf /opt/fispact/nuclear_data/ENDFB71data/endfb71-n/gxs-709
+
+# fission yield data
+fy_endf /opt/fispact/nuclear_data/GEFY61data/gefy61_nfy
+
+# spontaneous fission yield data
+sf_endf /opt/fispact/nuclear_data/GEFY61data/gefy61_sfy
+
+# absorp data
+absorp /opt/fispact/nuclear_data/decay/abs_2012
+
+# regulatory data
+hazards /opt/fispact/nuclear_data/decay/hazards_2012
+clear /opt/fispact/nuclear_data/decay/clear_2012
+a2data /opt/fispact/nuclear_data/decay/a2_2012
+
+# fluxes
+fluxes fluxes
+
+# collapsed cross section data (out)
+collapxo COLLAPX
+
+# condensed decay and fission data (in and out)
+arrayx ARRAYX
+
+# gamma bins
+ggbins ggbins

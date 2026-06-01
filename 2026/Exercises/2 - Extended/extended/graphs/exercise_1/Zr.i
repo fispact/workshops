@@ -1,0 +1,48 @@
+CLOBBER 
+<< -----collapse cross section and condense decay data----- >>
+GETXS 1 709
+GETDECAY 1
+FISPACT
+* FNS 5 Mins Zr
+DENSITY 6.52
+MASS 1.0E-3 1
+ZR 100.0
+MIND 1.E3
+HALF
+HAZA
+<< -----graph output----- >> 
+GRAPH 1 2 1 3
+UNCERT 2
+<< -----irradiation phase----- >> 
+FLUX 1.116E+10
+ATOMS
+TIME 5.0 MINS
+ATOMS
+<< -----cooling phase----- >> 
+FLUX 0.
+NOSTABLE
+ZERO
+TIME    35 ATOMS
+TIME    16 ATOMS
+TIME    15 ATOMS
+TIME    15 ATOMS
+TIME    15 ATOMS
+TIME    26 ATOMS
+TIME    36 ATOMS
+TIME    36 ATOMS
+TIME    52 ATOMS
+TIME    66 ATOMS
+TIME    66 ATOMS
+TIME    97 ATOMS
+TIME   126 ATOMS
+TIME   126 ATOMS
+TIME   187 ATOMS
+TIME   247 ATOMS
+TIME   246 ATOMS
+TIME   243 ATOMS
+TIME   427 ATOMS
+TIME   607 ATOMS
+TIME   606 ATOMS
+END
+* END
+/*

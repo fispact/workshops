@@ -1,0 +1,168 @@
+
+ LOG FILE: printlib.log
+
+ 14:43:46 14 June 2019           
+
+ Log  : FILES file = fispact.files1
+ Log  : fileroot   = printlib
+
+
+ ------------------------------------------------------------------
+ Files specified by the FILES file and fileroot for this run.
+ ------------------------------------------------------------------
+ The numbers after the unit names are the internal unit numbers.
+
+ input( 5)       printlib.i
+ graph(10)       printlib.gra
+ a2data(11)      /Volumes/Pegasus2/Code/FISPACT-II//nuclear_data/decay/a2_2012
+ arrayx(13)      ARRAYX
+ hazards(14)     /Volumes/Pegasus2/Code/FISPACT-II//nuclear_data/decay/hazards_2012
+ gnuplot(15)     printlib.plt
+ collapxo(17)    COLLAPX
+ ind_nuc(18)     /Volumes/Pegasus2/Code/FISPACT-II//nuclear_data/decay/decay_2012_index_2012
+ fluxes(20)      fluxes2
+ output(38)      printlib.out
+ absorp(39)      /Volumes/Pegasus2/Code/FISPACT-II//nuclear_data/decay/abs_2012
+ clear(40)       /Volumes/Pegasus2/Code/FISPACT-II//nuclear_data/decay/clear_2012
+ tab1(44)        printlib.tab1
+ tab2(45)        printlib.tab2
+ tab3(46)        printlib.tab3
+ tab4(47)        printlib.tab4
+ runlog(48)      printlib.log
+ sens(50)        printlib.sens
+ xs_endf(52)     /Volumes/Pegasus2/Code/FISPACT-II//nuclear_data/TENDL2015data/tal2015-n/gxs-709
+ dk_endf(53)     /Volumes/Pegasus2/Code/FISPACT-II//nuclear_data/decay/decay_2012
+ fy_endf(54)     /Volumes/Pegasus2/Code/FISPACT-II//nuclear_data/GEFY61data/gefy61_nfy
+ sf_endf(55)     /Volumes/Pegasus2/Code/FISPACT-II//nuclear_data/GEFY61data/gefy61_sfy
+ xs_endfb(56)    printlib.bin
+ nucgraph(59)    printlib.grn
+ nucgnu(60)      printlib.pln
+ ------------------------------------------------------------------
+
+
+ CLOBBER
+ GETXS 1 709
+ GETDECAY 1
+ FISPACT
+ * printlib example
+  load cross-sections
+ Log  : parent zai from xs_endf data file =        60000
+ Log  : parent zai from nuclide index     =        60120
+ 00001: Warning: endfmat_m:read_file_1: 2: 
+        zai mismatch for nuclide C12 in nuclide index
+        parent zai from nuclide index used
+ Log  : current za       =         6000
+ Log  : nuclide index za =         6012
+ Log  : mat =          600
+ Log  : mf  =            2
+ Log  : mt  =          151
+ Log  : ns  =            1
+ 00002: Warning: endfmat_m:check_za_awr: 1: 
+        za value in current record does not match nuclide index value
+        parent za from nuclide index used
+  load decay data
+ Log  : nuclide zai =       922420
+ Log  : rtyp =        0.0000000    
+ 00003: Warning: decay_m:read_spectra: 2: 
+        Invalid rtyp in spectrum subsection of decay file
+        irt set to zero
+  collapse fission yields
+ Log  : nuc_no =         3347
+ Log  : nuclide name = Rn214    
+ 00004: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found, it is either
+        missing from endf data or pruned by xs_threshold
+ Log  : nuc_no =         3348
+ Log  : nuclide name = Rn215    
+ 00005: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found, it is either
+        missing from endf data or pruned by xs_threshold
+ Log  : nuc_no =         3349
+ Log  : nuclide name = Rn216    
+ 00006: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found, it is either
+        missing from endf data or pruned by xs_threshold
+ Log  : nuc_no =         3350
+ Log  : nuclide name = Rn217    
+ 00007: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found, it is either
+        missing from endf data or pruned by xs_threshold
+ Log  : nuc_no =         3351
+ Log  : nuclide name = Rn218    
+ 00008: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found, it is either
+        missing from endf data or pruned by xs_threshold
+ Log  : nuc_no =         3387
+ Log  : nuclide name = Fr217    
+ 00009: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found, it is either
+        missing from endf data or pruned by xs_threshold
+ Log  : nuc_no =         3388
+ Log  : nuclide name = Fr218    
+ 00010: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found, it is either
+        missing from endf data or pruned by xs_threshold
+ Log  : nuc_no =         3390
+ Log  : nuclide name = Fr219    
+ 00011: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found, it is either
+        missing from endf data or pruned by xs_threshold
+ Log  : nuc_no =         3425
+ Log  : nuclide name = Ra219    
+ 00012: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found, it is either
+        missing from endf data or pruned by xs_threshold
+ Log  : nuc_no =         3426
+ Log  : nuclide name = Ra220    
+ 00013: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found, it is either
+        missing from endf data or pruned by xs_threshold
+ Log  : nuc_no =         3498
+ Log  : nuclide name = Th229m   
+ 00014: Warning: nuclide_m:nuclide_collapse_fissyld: 1: 
+        cross-section data for fission (mt=18) not found, it is either
+        missing from endf data or pruned by xs_threshold
+  run reset cross-section
+ PRINTLIB 4
+  run printlib
+ END
+ * end of example
+  run closedown
+  deallocate and closedown
+
+
+ ------------------------------------------------------------------
+ Files that have been opened during this run.
+ ------------------------------------------------------------------
+ The numbers after the unit names are the internal unit numbers.
+
+ input( 5)       printlib.i
+ arrayx(13)      ARRAYX
+ collapxo(17)    COLLAPX
+ ind_nuc(18)     /Volumes/Pegasus2/Code/FISPACT-II//nuclear_data/decay/decay_2012_index_2012
+ fluxes(20)      fluxes2
+ output(38)      printlib.out
+ runlog(48)      printlib.log
+ xs_endf(52)     /Volumes/Pegasus2/Code/FISPACT-II//nuclear_data/TENDL2015data/tal2015-n/gxs-709
+ dk_endf(53)     /Volumes/Pegasus2/Code/FISPACT-II//nuclear_data/decay/decay_2012
+ fy_endf(54)     /Volumes/Pegasus2/Code/FISPACT-II//nuclear_data/GEFY61data/gefy61_nfy
+ ------------------------------------------------------------------
+
+
+ Log  :                 fispact run time  =   73.859     secs
+ Log  :                 rateeq_init_flux  =  0.30000E-05 secs
+ Log  :                rateeq_irrad_step  =  0.10000E-05 secs
+ Log  :                 rateeq_cool_step  =   0.0000     secs
+ Log  :            output_inventory_step  =  0.10000E-05 secs
+ Log  :                    pathways_step  =  0.20000E-05 secs
+ Log  :                 sensitivity_step  =  0.20000E-05 secs
+
+
+  Error Summary 
+ ------------- 
+  total number of errors/warnings   =     14
+  number of serious errors/warnings =      0
+ 14:45:13 14 June 2019           
+
+ END OF LOG FILE
+

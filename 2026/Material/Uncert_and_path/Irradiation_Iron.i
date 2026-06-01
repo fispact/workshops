@@ -1,0 +1,23 @@
+CLOBBER
+MONITOR 1
+GETXS 1 709
+GETDECAY 1
+FISPACT
+* Cobalt
+MASS 1.0 1
+FE  100.0
+GRAPH 2 2 1 1 3
+HALF
+<< -----irradiation phase----- >>
+FLUX 10.0E+10
+ATOMS
+TIME 10 DAYS
+ATOMS
+<< -----cooling phase----- >>
+FLUX 0.
+ZERO
+TIME    1 HOURS ATOMS
+END
+* END
+
+

@@ -1,0 +1,16 @@
+CLOBBER
+MONITOR 1
+GETXS -1 709
+GETDECAY 1
+NOFISS
+FISPACT
+* default Co60 gamma spec
+DENSITY 8.9
+FUEL 1
+Co60 1E24
+TAB4 1
+<< -- print -- >>
+ATOMS
+END 
+* END 
+/*

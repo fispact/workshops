@@ -1,0 +1,7 @@
+fluxes fluxes
+ind_nuc /Users/fosterd/nuclear_data/TENDL2017data/tendl17_decay12_index
+absorp /Users/fosterd/nuclear_data/decay/abs_2012
+dk_endf /Users/fosterd/nuclear_data/decay/decay_2012
+fy_endf /Users/fosterd/nuclear_data/UKFY41data/ukfy4_1
+sf_endf /Users/fosterd/nuclear_data/GEFY61data/gefy61_sfy/
+xs_endf /Users/fosterd/nuclear_data/TENDL2017data/tal2017-n/gxs-709
